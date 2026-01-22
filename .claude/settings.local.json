@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php:*)",
+      "Bash(brew install:*)",
+      "Bash(brew list:*)",
+      "Bash(/opt/homebrew/bin/php@8.2:*)",
+      "Bash(/opt/homebrew/Cellar/php@8.2/8.2.30/bin/php:*)",
+      "Bash(chmod:*)",
+      "Bash(/Users/wangdafeng/m4b-tool/m4b-tool.sh merge:*)",
+      "Bash(curl:*)",
+      "Bash(cat:*)",
+      "Bash(xargs kill:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

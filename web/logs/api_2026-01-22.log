@@ -1,0 +1,1219 @@
+[2026-01-22 20:08:14] [INFO] Response Status: 200
+[2026-01-22 20:08:14] [INFO] Response Data: {"success":true,"logs":"暂无日志"}
+[2026-01-22 20:08:14] [INFO] === Request End ===
+
+[2026-01-22 20:09:27] [INFO] === Request Start ===
+[2026-01-22 20:09:27] [INFO] Action: upload
+[2026-01-22 20:09:27] [INFO] Method: POST
+[2026-01-22 20:09:27] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:09:27] [INFO] IP: ::1
+[2026-01-22 20:09:27] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:09:27] [INFO] Files: {"files":{"name":"2026年1月22日 09_27_47.m4a","full_path":"2026年1月22日 09_27_47.m4a","type":"","tmp_name":"","error":1,"size":0}}
+[2026-01-22 20:09:27] [INFO] === Request Start ===
+[2026-01-22 20:09:27] [INFO] Action: upload
+[2026-01-22 20:09:27] [INFO] Method: POST
+[2026-01-22 20:09:27] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:09:27] [INFO] IP: ::1
+[2026-01-22 20:09:27] [INFO] Files: {"files":{"name":"2026年1月22日 09_27_47.m4a","full_path":"2026年1月22日 09_27_47.m4a","type":"","tmp_name":"","error":1,"size":0}}
+[2026-01-22 20:09:27] [INFO] 开始处理文件上传...
+[2026-01-22 20:09:27] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_697213778edb67.19229454/
+[2026-01-22 20:13:26] [INFO] === Request Start ===
+[2026-01-22 20:13:26] [INFO] Action: upload
+[2026-01-22 20:13:26] [INFO] Method: POST
+[2026-01-22 20:13:26] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:13:26] [INFO] IP: ::1
+[2026-01-22 20:13:26] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:13:26] [INFO] Files: {"files":{"name":"2026年1月22日 09_27_47.m4a","full_path":"2026年1月22日 09_27_47.m4a","type":"audio\/x-m4a","tmp_name":"\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpz8XWb7","error":0,"size":6910819}}
+[2026-01-22 20:13:26] [INFO] === Request Start ===
+[2026-01-22 20:13:26] [INFO] Action: upload
+[2026-01-22 20:13:26] [INFO] Method: POST
+[2026-01-22 20:13:26] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:13:26] [INFO] IP: ::1
+[2026-01-22 20:13:26] [INFO] Files: {"files":{"name":"2026年1月22日 09_27_47.m4a","full_path":"2026年1月22日 09_27_47.m4a","type":"audio\/x-m4a","tmp_name":"\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpz8XWb7","error":0,"size":6910819}}
+[2026-01-22 20:13:26] [INFO] 开始处理文件上传...
+[2026-01-22 20:13:26] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_6972146617f725.95344594/
+[2026-01-22 20:13:45] [INFO] Response Status: 200
+[2026-01-22 20:13:45] [INFO] Response Data: {"success":true,"logFile":"api_2026-01-22.log","logs":"[2026-01-22 20:08:14] [INFO] Response Status: 200\n[2026-01-22 20:08:14] [INFO] Response Data: {\"success\":true,\"logs\":\"暂无日志\"}\n[2026-01-22 20:08:14] [INFO] === Request End ===\n\n[2026-01-22 20:09:27] [INFO] === Request Start ===\n[2026-01-22 20:09:27] [INFO] Action: upload\n[2026-01-22 20:09:27] [INFO] Method: POST\n[2026-01-22 20:09:27] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:09:27] [INFO] IP: ::1\n[2026-01-22 20:09:27] [INFO] Data: {\"action\":\"upload\"}\n[2026-01-22 20:09:27] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"\",\"tmp_name\":\"\",\"error\":1,\"size\":0}}\n[2026-01-22 20:09:27] [INFO] === Request Start ===\n[2026-01-22 20:09:27] [INFO] Action: upload\n[2026-01-22 20:09:27] [INFO] Method: POST\n[2026-01-22 20:09:27] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:09:27] [INFO] IP: ::1\n[2026-01-22 20:09:27] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"\",\"tmp_name\":\"\",\"error\":1,\"size\":0}}\n[2026-01-22 20:09:27] [INFO] 开始处理文件上传...\n[2026-01-22 20:09:27] [INFO] 任务目录创建成功: \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_697213778edb67.19229454\/\n[2026-01-22 20:13:26] [INFO] === Request Start ===\n[2026-01-22 20:13:26] [INFO] Action: upload\n[2026-01-22 20:13:26] [INFO] Method: POST\n[2026-01-22 20:13:26] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:13:26] [INFO] IP: ::1\n[2026-01-22 20:13:26] [INFO] Data: {\"action\":\"upload\"}\n[2026-01-22 20:13:26] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"audio\\\/x-m4a\",\"tmp_name\":\"\\\/private\\\/var\\\/folders\\\/wd\\\/7b2dhq1n4vbbbwpycxybkn6h0000gn\\\/T\\\/phpz8XWb7\",\"error\":0,\"size\":6910819}}\n[2026-01-22 20:13:26] [INFO] === Request Start ===\n[2026-01-22 20:13:26] [INFO] Action: upload\n[2026-01-22 20:13:26] [INFO] Method: POST\n[2026-01-22 20:13:26] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:13:26] [INFO] IP: ::1\n[2026-01-22 20:13:26] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"audio\\\/x-m4a\",\"tmp_name\":\"\\\/private\\\/var\\\/folders\\\/wd\\\/7b2dhq1n4vbbbwpycxybkn6h0000gn\\\/T\\\/phpz8XWb7\",\"error\":0,\"size\":6910819}}\n[2026-01-22 20:13:26] [INFO] 开始处理文件上传...\n[2026-01-22 20:13:26] [INFO] 任务目录创建成功: \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972146617f725.95344594\/\n","totalLines":35}
+[2026-01-22 20:13:45] [INFO] === Request End ===
+
+[2026-01-22 20:13:45] [INFO] Response Status: 200
+[2026-01-22 20:13:45] [INFO] Response Data: {"success":true,"logFile":"api_2026-01-22.log","logs":"[2026-01-22 20:08:14] [INFO] Response Status: 200\n[2026-01-22 20:08:14] [INFO] Response Data: {\"success\":true,\"logs\":\"暂无日志\"}\n[2026-01-22 20:08:14] [INFO] === Request End ===\n\n[2026-01-22 20:09:27] [INFO] === Request Start ===\n[2026-01-22 20:09:27] [INFO] Action: upload\n[2026-01-22 20:09:27] [INFO] Method: POST\n[2026-01-22 20:09:27] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:09:27] [INFO] IP: ::1\n[2026-01-22 20:09:27] [INFO] Data: {\"action\":\"upload\"}\n[2026-01-22 20:09:27] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"\",\"tmp_name\":\"\",\"error\":1,\"size\":0}}\n[2026-01-22 20:09:27] [INFO] === Request Start ===\n[2026-01-22 20:09:27] [INFO] Action: upload\n[2026-01-22 20:09:27] [INFO] Method: POST\n[2026-01-22 20:09:27] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:09:27] [INFO] IP: ::1\n[2026-01-22 20:09:27] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"\",\"tmp_name\":\"\",\"error\":1,\"size\":0}}\n[2026-01-22 20:09:27] [INFO] 开始处理文件上传...\n[2026-01-22 20:09:27] [INFO] 任务目录创建成功: \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_697213778edb67.19229454\/\n[2026-01-22 20:13:26] [INFO] === Request Start ===\n[2026-01-22 20:13:26] [INFO] Action: upload\n[2026-01-22 20:13:26] [INFO] Method: POST\n[2026-01-22 20:13:26] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:13:26] [INFO] IP: ::1\n[2026-01-22 20:13:26] [INFO] Data: {\"action\":\"upload\"}\n[2026-01-22 20:13:26] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"audio\\\/x-m4a\",\"tmp_name\":\"\\\/private\\\/var\\\/folders\\\/wd\\\/7b2dhq1n4vbbbwpycxybkn6h0000gn\\\/T\\\/phpz8XWb7\",\"error\":0,\"size\":6910819}}\n[2026-01-22 20:13:26] [INFO] === Request Start ===\n[2026-01-22 20:13:26] [INFO] Action: upload\n[2026-01-22 20:13:26] [INFO] Method: POST\n[2026-01-22 20:13:26] [INFO] URI: \/api.php?action=upload\n[2026-01-22 20:13:26] [INFO] IP: ::1\n[2026-01-22 20:13:26] [INFO] Files: {\"files\":{\"name\":\"2026年1月22日 09_27_47.m4a\",\"full_path\":\"2026年1月22日 09_27_47.m4a\",\"type\":\"audio\\\/x-m4a\",\"tmp_name\":\"\\\/private\\\/var\\\/folders\\\/wd\\\/7b2dhq1n4vbbbwpycxybkn6h0000gn\\\/T\\\/phpz8XWb7\",\"error\":0,\"size\":6910819}}\n[2026-01-22 20:13:26] [INFO] 开始处理文件上传...\n[2026-01-22 20:13:26] [INFO] 任务目录创建成功: \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972146617f725.95344594\/\n[2026-01-22 20:13:45] [INFO] Response Status: 200\n[2026-01-22 20:13:45] [INFO] Response Data: {\"success\":true,\"logFile\":\"api_2026-01-22.log\",\"logs\":\"[2026-01-22 20:08:14] [INFO] Response Status: 200\\n[2026-01-22 20:08:14] [INFO] Response Data: {\\\"success\\\":true,\\\"logs\\\":\\\"暂无日志\\\"}\\n[2026-01-22 20:08:14] [INFO] === Request End ===\\n\\n[2026-01-22 20:09:27] [INFO] === Request Start ===\\n[2026-01-22 20:09:27] [INFO] Action: upload\\n[2026-01-22 20:09:27] [INFO] Method: POST\\n[2026-01-22 20:09:27] [INFO] URI: \\\/api.php?action=upload\\n[2026-01-22 20:09:27] [INFO] IP: ::1\\n[2026-01-22 20:09:27] [INFO] Data: {\\\"action\\\":\\\"upload\\\"}\\n[2026-01-22 20:09:27] [INFO] Files: {\\\"files\\\":{\\\"name\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"full_path\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"type\\\":\\\"\\\",\\\"tmp_name\\\":\\\"\\\",\\\"error\\\":1,\\\"size\\\":0}}\\n[2026-01-22 20:09:27] [INFO] === Request Start ===\\n[2026-01-22 20:09:27] [INFO] Action: upload\\n[2026-01-22 20:09:27] [INFO] Method: POST\\n[2026-01-22 20:09:27] [INFO] URI: \\\/api.php?action=upload\\n[2026-01-22 20:09:27] [INFO] IP: ::1\\n[2026-01-22 20:09:27] [INFO] Files: {\\\"files\\\":{\\\"name\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"full_path\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"type\\\":\\\"\\\",\\\"tmp_name\\\":\\\"\\\",\\\"error\\\":1,\\\"size\\\":0}}\\n[2026-01-22 20:09:27] [INFO] 开始处理文件上传...\\n[2026-01-22 20:09:27] [INFO] 任务目录创建成功: \\\/Users\\\/wangdafeng\\\/m4b-tool\\\/web\\\/uploads\\\/task_697213778edb67.19229454\\\/\\n[2026-01-22 20:13:26] [INFO] === Request Start ===\\n[2026-01-22 20:13:26] [INFO] Action: upload\\n[2026-01-22 20:13:26] [INFO] Method: POST\\n[2026-01-22 20:13:26] [INFO] URI: \\\/api.php?action=upload\\n[2026-01-22 20:13:26] [INFO] IP: ::1\\n[2026-01-22 20:13:26] [INFO] Data: {\\\"action\\\":\\\"upload\\\"}\\n[2026-01-22 20:13:26] [INFO] Files: {\\\"files\\\":{\\\"name\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"full_path\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"type\\\":\\\"audio\\\\\\\/x-m4a\\\",\\\"tmp_name\\\":\\\"\\\\\\\/private\\\\\\\/var\\\\\\\/folders\\\\\\\/wd\\\\\\\/7b2dhq1n4vbbbwpycxybkn6h0000gn\\\\\\\/T\\\\\\\/phpz8XWb7\\\",\\\"error\\\":0,\\\"size\\\":6910819}}\\n[2026-01-22 20:13:26] [INFO] === Request Start ===\\n[2026-01-22 20:13:26] [INFO] Action: upload\\n[2026-01-22 20:13:26] [INFO] Method: POST\\n[2026-01-22 20:13:26] [INFO] URI: \\\/api.php?action=upload\\n[2026-01-22 20:13:26] [INFO] IP: ::1\\n[2026-01-22 20:13:26] [INFO] Files: {\\\"files\\\":{\\\"name\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"full_path\\\":\\\"2026年1月22日 09_27_47.m4a\\\",\\\"type\\\":\\\"audio\\\\\\\/x-m4a\\\",\\\"tmp_name\\\":\\\"\\\\\\\/private\\\\\\\/var\\\\\\\/folders\\\\\\\/wd\\\\\\\/7b2dhq1n4vbbbwpycxybkn6h0000gn\\\\\\\/T\\\\\\\/phpz8XWb7\\\",\\\"error\\\":0,\\\"size\\\":6910819}}\\n[2026-01-22 20:13:26] [INFO] 开始处理文件上传...\\n[2026-01-22 20:13:26] [INFO] 任务目录创建成功: \\\/Users\\\/wangdafeng\\\/m4b-tool\\\/web\\\/uploads\\\/task_6972146617f725.95344594\\\/\\n\",\"totalLines\":35}\n[2026-01-22 20:13:45] [INFO] === Request End ===\n\n","totalLines":39}
+[2026-01-22 20:13:45] [INFO] === Request End ===
+
+[2026-01-22 20:15:06] [INFO] === Request Start ===
+[2026-01-22 20:15:06] [INFO] Action: upload
+[2026-01-22 20:15:06] [INFO] Method: POST
+[2026-01-22 20:15:06] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:15:06] [INFO] IP: ::1
+[2026-01-22 20:15:06] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:15:06] [INFO] Files: {"files":{"name":"2026年1月22日 09_27_47.m4a","full_path":"2026年1月22日 09_27_47.m4a","type":"audio\/x-m4a","tmp_name":"\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpfHbLks","error":0,"size":6910819}}
+[2026-01-22 20:15:06] [INFO] === Request Start ===
+[2026-01-22 20:15:06] [INFO] Action: upload
+[2026-01-22 20:15:06] [INFO] Method: POST
+[2026-01-22 20:15:06] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:15:06] [INFO] IP: ::1
+[2026-01-22 20:15:06] [INFO] Files: {"files":{"name":"2026年1月22日 09_27_47.m4a","full_path":"2026年1月22日 09_27_47.m4a","type":"audio\/x-m4a","tmp_name":"\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpfHbLks","error":0,"size":6910819}}
+[2026-01-22 20:15:06] [INFO] 开始处理文件上传...
+[2026-01-22 20:15:06] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_697214ca9b0043.11386834/
+[2026-01-22 20:15:06] [INFO] 转换单文件格式为多文件格式
+[2026-01-22 20:15:06] [INFO] 上传的文件数量: 1
+[2026-01-22 20:15:06] [INFO] PHP配置 - upload_max_filesize: 100M, post_max_size: 100M, memory_limit: 256M
+[2026-01-22 20:15:06] [INFO] 开始处理 1 个文件
+[2026-01-22 20:15:06] [INFO] 处理文件 [0]: 2026年1月22日 09_27_47.m4a (大小: 6910819 bytes, 错误代码: 0)
+[2026-01-22 20:15:06] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_697214ca9b0043.11386834/001_2026___1___22____09_27_47.m4a
+[2026-01-22 20:15:06] [SUCCESS] 文件上传成功: 2026年1月22日 09_27_47.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_697214ca9b0043.11386834/001_2026___1___22____09_27_47.m4a (实际大小: 6910819 bytes)
+[2026-01-22 20:15:06] [SUCCESS] 上传完成！成功上传 1 个文件
+[2026-01-22 20:15:06] [INFO] Response Status: 200
+[2026-01-22 20:15:06] [INFO] Response Data: {"success":true,"taskId":"task_697214ca9b0043.11386834","files":[{"name":"2026年1月22日 09_27_47.m4a","file":"001_2026___1___22____09_27_47.m4a","size":6910819,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_697214ca9b0043.11386834\/001_2026___1___22____09_27_47.m4a"}],"fileCount":1}
+[2026-01-22 20:15:06] [INFO] === Request End ===
+
+[2026-01-22 20:15:11] [INFO] === Request Start ===
+[2026-01-22 20:15:11] [INFO] Action: upload
+[2026-01-22 20:15:11] [INFO] Method: POST
+[2026-01-22 20:15:11] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:15:11] [INFO] IP: ::1
+[2026-01-22 20:15:11] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:15:11] [INFO] Files: {"files":{"name":"2026年1月22日 09_36_10.m4a","full_path":"2026年1月22日 09_36_10.m4a","type":"audio\/x-m4a","tmp_name":"\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpQC4oWA","error":0,"size":52668618}}
+[2026-01-22 20:15:11] [INFO] === Request Start ===
+[2026-01-22 20:15:11] [INFO] Action: upload
+[2026-01-22 20:15:11] [INFO] Method: POST
+[2026-01-22 20:15:11] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:15:11] [INFO] IP: ::1
+[2026-01-22 20:15:11] [INFO] Files: {"files":{"name":"2026年1月22日 09_36_10.m4a","full_path":"2026年1月22日 09_36_10.m4a","type":"audio\/x-m4a","tmp_name":"\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpQC4oWA","error":0,"size":52668618}}
+[2026-01-22 20:15:11] [INFO] 开始处理文件上传...
+[2026-01-22 20:15:11] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_697214cfbf0854.04808069/
+[2026-01-22 20:15:11] [INFO] 转换单文件格式为多文件格式
+[2026-01-22 20:15:11] [INFO] 上传的文件数量: 1
+[2026-01-22 20:15:11] [INFO] PHP配置 - upload_max_filesize: 100M, post_max_size: 100M, memory_limit: 256M
+[2026-01-22 20:15:11] [INFO] 开始处理 1 个文件
+[2026-01-22 20:15:11] [INFO] 处理文件 [0]: 2026年1月22日 09_36_10.m4a (大小: 52668618 bytes, 错误代码: 0)
+[2026-01-22 20:15:11] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_697214cfbf0854.04808069/001_2026___1___22____09_36_10.m4a
+[2026-01-22 20:15:11] [SUCCESS] 文件上传成功: 2026年1月22日 09_36_10.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_697214cfbf0854.04808069/001_2026___1___22____09_36_10.m4a (实际大小: 52668618 bytes)
+[2026-01-22 20:15:11] [SUCCESS] 上传完成！成功上传 1 个文件
+[2026-01-22 20:15:11] [INFO] Response Status: 200
+[2026-01-22 20:15:11] [INFO] Response Data: {"success":true,"taskId":"task_697214cfbf0854.04808069","files":[{"name":"2026年1月22日 09_36_10.m4a","file":"001_2026___1___22____09_36_10.m4a","size":52668618,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_697214cfbf0854.04808069\/001_2026___1___22____09_36_10.m4a"}],"fileCount":1}
+[2026-01-22 20:15:11] [INFO] === Request End ===
+
+[2026-01-22 20:20:54] [INFO] === Request Start ===
+[2026-01-22 20:20:54] [INFO] Action: upload
+[2026-01-22 20:20:54] [INFO] Method: POST
+[2026-01-22 20:20:54] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:20:54] [INFO] IP: ::1
+[2026-01-22 20:20:54] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:20:54] [INFO] Files: {"files":{"name":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"full_path":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"type":["audio\/x-m4a","audio\/x-m4a"],"tmp_name":["\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpm04SwW","\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpONcP9K"],"error":[0,0],"size":[6910819,52668618]}}
+[2026-01-22 20:20:54] [INFO] === Request Start ===
+[2026-01-22 20:20:54] [INFO] Action: upload
+[2026-01-22 20:20:54] [INFO] Method: POST
+[2026-01-22 20:20:54] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:20:54] [INFO] IP: ::1
+[2026-01-22 20:20:54] [INFO] Files: {"files":{"name":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"full_path":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"type":["audio\/x-m4a","audio\/x-m4a"],"tmp_name":["\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpm04SwW","\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpONcP9K"],"error":[0,0],"size":[6910819,52668618]}}
+[2026-01-22 20:20:54] [INFO] 开始处理文件上传...
+[2026-01-22 20:20:54] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_697216261fa567.04588093/
+[2026-01-22 20:20:54] [INFO] 上传的文件数量: 2
+[2026-01-22 20:20:54] [INFO] PHP配置 - upload_max_filesize: 100M, post_max_size: 100M, memory_limit: 256M
+[2026-01-22 20:20:54] [INFO] 开始处理 2 个文件
+[2026-01-22 20:20:54] [INFO] 处理文件 [0]: 2026年1月22日 09_27_47.m4a (大小: 6910819 bytes, 错误代码: 0)
+[2026-01-22 20:20:54] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_697216261fa567.04588093/001_2026___1___22____09_27_47.m4a
+[2026-01-22 20:20:54] [SUCCESS] 文件上传成功: 2026年1月22日 09_27_47.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_697216261fa567.04588093/001_2026___1___22____09_27_47.m4a (实际大小: 6910819 bytes)
+[2026-01-22 20:20:54] [INFO] 处理文件 [1]: 2026年1月22日 09_36_10.m4a (大小: 52668618 bytes, 错误代码: 0)
+[2026-01-22 20:20:54] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_697216261fa567.04588093/002_2026___1___22____09_36_10.m4a
+[2026-01-22 20:20:54] [SUCCESS] 文件上传成功: 2026年1月22日 09_36_10.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_697216261fa567.04588093/002_2026___1___22____09_36_10.m4a (实际大小: 52668618 bytes)
+[2026-01-22 20:20:54] [SUCCESS] 上传完成！成功上传 2 个文件
+[2026-01-22 20:20:54] [INFO] Response Status: 200
+[2026-01-22 20:20:54] [INFO] Response Data: {"success":true,"taskId":"task_697216261fa567.04588093","files":[{"name":"2026年1月22日 09_27_47.m4a","file":"001_2026___1___22____09_27_47.m4a","size":6910819,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_697216261fa567.04588093\/001_2026___1___22____09_27_47.m4a"},{"name":"2026年1月22日 09_36_10.m4a","file":"002_2026___1___22____09_36_10.m4a","size":52668618,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_697216261fa567.04588093\/002_2026___1___22____09_36_10.m4a"}],"fileCount":2}
+[2026-01-22 20:20:54] [INFO] === Request End ===
+
+[2026-01-22 20:21:02] [INFO] === Request Start ===
+[2026-01-22 20:21:02] [INFO] Action: merge
+[2026-01-22 20:21:02] [INFO] Method: POST
+[2026-01-22 20:21:02] [INFO] URI: /api.php?action=merge
+[2026-01-22 20:21:02] [INFO] IP: ::1
+[2026-01-22 20:21:02] [INFO] Data: {"action":"merge"}
+[2026-01-22 20:21:02] [INFO] Response Status: 200
+[2026-01-22 20:21:02] [INFO] Response Data: {"success":true,"message":"合并任务已开始","taskId":"task_697216261fa567.04588093","outputFile":"task_697216261fa567.04588093.m4b"}
+[2026-01-22 20:21:02] [INFO] === Request End ===
+
+[2026-01-22 20:21:02] [INFO] === Request Start ===
+[2026-01-22 20:21:02] [INFO] Action: status
+[2026-01-22 20:21:02] [INFO] Method: GET
+[2026-01-22 20:21:02] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:02] [INFO] IP: ::1
+[2026-01-22 20:21:02] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:02] [INFO] Response Status: 200
+[2026-01-22 20:21:02] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:02] [INFO] === Request End ===
+
+[2026-01-22 20:21:04] [INFO] === Request Start ===
+[2026-01-22 20:21:04] [INFO] Action: status
+[2026-01-22 20:21:04] [INFO] Method: GET
+[2026-01-22 20:21:04] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:04] [INFO] IP: ::1
+[2026-01-22 20:21:04] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:04] [INFO] Response Status: 200
+[2026-01-22 20:21:04] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:04] [INFO] === Request End ===
+
+[2026-01-22 20:21:06] [INFO] === Request Start ===
+[2026-01-22 20:21:06] [INFO] Action: status
+[2026-01-22 20:21:06] [INFO] Method: GET
+[2026-01-22 20:21:06] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:06] [INFO] IP: ::1
+[2026-01-22 20:21:06] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:06] [INFO] Response Status: 200
+[2026-01-22 20:21:06] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:06] [INFO] === Request End ===
+
+[2026-01-22 20:21:09] [INFO] === Request Start ===
+[2026-01-22 20:21:09] [INFO] Action: status
+[2026-01-22 20:21:09] [INFO] Method: GET
+[2026-01-22 20:21:09] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:09] [INFO] IP: ::1
+[2026-01-22 20:21:09] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:09] [INFO] Response Status: 200
+[2026-01-22 20:21:09] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:09] [INFO] === Request End ===
+
+[2026-01-22 20:21:11] [INFO] === Request Start ===
+[2026-01-22 20:21:11] [INFO] Action: status
+[2026-01-22 20:21:11] [INFO] Method: GET
+[2026-01-22 20:21:11] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:11] [INFO] IP: ::1
+[2026-01-22 20:21:11] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:11] [INFO] Response Status: 200
+[2026-01-22 20:21:11] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:11] [INFO] === Request End ===
+
+[2026-01-22 20:21:13] [INFO] === Request Start ===
+[2026-01-22 20:21:13] [INFO] Action: status
+[2026-01-22 20:21:13] [INFO] Method: GET
+[2026-01-22 20:21:13] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:13] [INFO] IP: ::1
+[2026-01-22 20:21:13] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:13] [INFO] Response Status: 200
+[2026-01-22 20:21:13] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:13] [INFO] === Request End ===
+
+[2026-01-22 20:21:15] [INFO] === Request Start ===
+[2026-01-22 20:21:15] [INFO] Action: status
+[2026-01-22 20:21:15] [INFO] Method: GET
+[2026-01-22 20:21:15] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:15] [INFO] IP: ::1
+[2026-01-22 20:21:15] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:15] [INFO] Response Status: 200
+[2026-01-22 20:21:15] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:15] [INFO] === Request End ===
+
+[2026-01-22 20:21:17] [INFO] === Request Start ===
+[2026-01-22 20:21:17] [INFO] Action: status
+[2026-01-22 20:21:17] [INFO] Method: GET
+[2026-01-22 20:21:17] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:17] [INFO] IP: ::1
+[2026-01-22 20:21:17] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:17] [INFO] Response Status: 200
+[2026-01-22 20:21:17] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:17] [INFO] === Request End ===
+
+[2026-01-22 20:21:19] [INFO] === Request Start ===
+[2026-01-22 20:21:19] [INFO] Action: status
+[2026-01-22 20:21:19] [INFO] Method: GET
+[2026-01-22 20:21:19] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:19] [INFO] IP: ::1
+[2026-01-22 20:21:19] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:19] [INFO] Response Status: 200
+[2026-01-22 20:21:19] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:19] [INFO] === Request End ===
+
+[2026-01-22 20:21:21] [INFO] === Request Start ===
+[2026-01-22 20:21:21] [INFO] Action: status
+[2026-01-22 20:21:21] [INFO] Method: GET
+[2026-01-22 20:21:21] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:21] [INFO] IP: ::1
+[2026-01-22 20:21:21] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:21] [INFO] Response Status: 200
+[2026-01-22 20:21:21] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:21] [INFO] === Request End ===
+
+[2026-01-22 20:21:23] [INFO] === Request Start ===
+[2026-01-22 20:21:23] [INFO] Action: status
+[2026-01-22 20:21:23] [INFO] Method: GET
+[2026-01-22 20:21:23] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:23] [INFO] IP: ::1
+[2026-01-22 20:21:23] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:23] [INFO] Response Status: 200
+[2026-01-22 20:21:23] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:23] [INFO] === Request End ===
+
+[2026-01-22 20:21:25] [INFO] === Request Start ===
+[2026-01-22 20:21:25] [INFO] Action: status
+[2026-01-22 20:21:25] [INFO] Method: GET
+[2026-01-22 20:21:25] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:25] [INFO] IP: ::1
+[2026-01-22 20:21:25] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:25] [INFO] Response Status: 200
+[2026-01-22 20:21:25] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:25] [INFO] === Request End ===
+
+[2026-01-22 20:21:27] [INFO] === Request Start ===
+[2026-01-22 20:21:27] [INFO] Action: status
+[2026-01-22 20:21:27] [INFO] Method: GET
+[2026-01-22 20:21:27] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:27] [INFO] IP: ::1
+[2026-01-22 20:21:27] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:27] [INFO] Response Status: 200
+[2026-01-22 20:21:27] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:27] [INFO] === Request End ===
+
+[2026-01-22 20:21:29] [INFO] === Request Start ===
+[2026-01-22 20:21:29] [INFO] Action: status
+[2026-01-22 20:21:29] [INFO] Method: GET
+[2026-01-22 20:21:29] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:29] [INFO] IP: ::1
+[2026-01-22 20:21:29] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:29] [INFO] Response Status: 200
+[2026-01-22 20:21:29] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:29] [INFO] === Request End ===
+
+[2026-01-22 20:21:31] [INFO] === Request Start ===
+[2026-01-22 20:21:31] [INFO] Action: status
+[2026-01-22 20:21:31] [INFO] Method: GET
+[2026-01-22 20:21:31] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:31] [INFO] IP: ::1
+[2026-01-22 20:21:31] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:31] [INFO] Response Status: 200
+[2026-01-22 20:21:31] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:31] [INFO] === Request End ===
+
+[2026-01-22 20:21:33] [INFO] === Request Start ===
+[2026-01-22 20:21:33] [INFO] Action: status
+[2026-01-22 20:21:33] [INFO] Method: GET
+[2026-01-22 20:21:33] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:33] [INFO] IP: ::1
+[2026-01-22 20:21:33] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:33] [INFO] Response Status: 200
+[2026-01-22 20:21:33] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:33] [INFO] === Request End ===
+
+[2026-01-22 20:21:35] [INFO] === Request Start ===
+[2026-01-22 20:21:35] [INFO] Action: status
+[2026-01-22 20:21:35] [INFO] Method: GET
+[2026-01-22 20:21:35] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:35] [INFO] IP: ::1
+[2026-01-22 20:21:35] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:35] [INFO] Response Status: 200
+[2026-01-22 20:21:35] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:35] [INFO] === Request End ===
+
+[2026-01-22 20:21:37] [INFO] === Request Start ===
+[2026-01-22 20:21:37] [INFO] Action: status
+[2026-01-22 20:21:37] [INFO] Method: GET
+[2026-01-22 20:21:37] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:37] [INFO] IP: ::1
+[2026-01-22 20:21:37] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:37] [INFO] Response Status: 200
+[2026-01-22 20:21:37] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:37] [INFO] === Request End ===
+
+[2026-01-22 20:21:39] [INFO] === Request Start ===
+[2026-01-22 20:21:39] [INFO] Action: status
+[2026-01-22 20:21:39] [INFO] Method: GET
+[2026-01-22 20:21:39] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:39] [INFO] IP: ::1
+[2026-01-22 20:21:39] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:39] [INFO] Response Status: 200
+[2026-01-22 20:21:39] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:39] [INFO] === Request End ===
+
+[2026-01-22 20:21:41] [INFO] === Request Start ===
+[2026-01-22 20:21:41] [INFO] Action: status
+[2026-01-22 20:21:41] [INFO] Method: GET
+[2026-01-22 20:21:41] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:41] [INFO] IP: ::1
+[2026-01-22 20:21:41] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:41] [INFO] Response Status: 200
+[2026-01-22 20:21:41] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:41] [INFO] === Request End ===
+
+[2026-01-22 20:21:43] [INFO] === Request Start ===
+[2026-01-22 20:21:43] [INFO] Action: status
+[2026-01-22 20:21:43] [INFO] Method: GET
+[2026-01-22 20:21:43] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:43] [INFO] IP: ::1
+[2026-01-22 20:21:43] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:43] [INFO] Response Status: 200
+[2026-01-22 20:21:43] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:43] [INFO] === Request End ===
+
+[2026-01-22 20:21:45] [INFO] === Request Start ===
+[2026-01-22 20:21:45] [INFO] Action: status
+[2026-01-22 20:21:45] [INFO] Method: GET
+[2026-01-22 20:21:45] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:45] [INFO] IP: ::1
+[2026-01-22 20:21:45] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:45] [INFO] Response Status: 200
+[2026-01-22 20:21:45] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:45] [INFO] === Request End ===
+
+[2026-01-22 20:21:47] [INFO] === Request Start ===
+[2026-01-22 20:21:47] [INFO] Action: status
+[2026-01-22 20:21:47] [INFO] Method: GET
+[2026-01-22 20:21:47] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:47] [INFO] IP: ::1
+[2026-01-22 20:21:47] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:47] [INFO] Response Status: 200
+[2026-01-22 20:21:47] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:47] [INFO] === Request End ===
+
+[2026-01-22 20:21:49] [INFO] === Request Start ===
+[2026-01-22 20:21:49] [INFO] Action: status
+[2026-01-22 20:21:49] [INFO] Method: GET
+[2026-01-22 20:21:49] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:49] [INFO] IP: ::1
+[2026-01-22 20:21:49] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:49] [INFO] Response Status: 200
+[2026-01-22 20:21:49] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:49] [INFO] === Request End ===
+
+[2026-01-22 20:21:51] [INFO] === Request Start ===
+[2026-01-22 20:21:51] [INFO] Action: status
+[2026-01-22 20:21:51] [INFO] Method: GET
+[2026-01-22 20:21:51] [INFO] URI: /api.php?action=status&taskId=task_697216261fa567.04588093
+[2026-01-22 20:21:51] [INFO] IP: ::1
+[2026-01-22 20:21:51] [INFO] Data: {"action":"status","taskId":"task_697216261fa567.04588093"}
+[2026-01-22 20:21:51] [INFO] Response Status: 200
+[2026-01-22 20:21:51] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["sh: merge: command not found"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:21:51] [INFO] === Request End ===
+
+[2026-01-22 20:22:05] [INFO] === Request Start ===
+[2026-01-22 20:22:05] [INFO] Action: upload
+[2026-01-22 20:22:05] [INFO] Method: POST
+[2026-01-22 20:22:05] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:22:05] [INFO] IP: ::1
+[2026-01-22 20:22:05] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:22:05] [INFO] Files: {"files":{"name":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"full_path":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"type":["audio\/x-m4a","audio\/x-m4a"],"tmp_name":["\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/php3zCAv8","\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpu0zWh8"],"error":[0,0],"size":[6910819,52668618]}}
+[2026-01-22 20:22:05] [INFO] === Request Start ===
+[2026-01-22 20:22:05] [INFO] Action: upload
+[2026-01-22 20:22:05] [INFO] Method: POST
+[2026-01-22 20:22:05] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:22:05] [INFO] IP: ::1
+[2026-01-22 20:22:05] [INFO] Files: {"files":{"name":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"full_path":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"type":["audio\/x-m4a","audio\/x-m4a"],"tmp_name":["\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/php3zCAv8","\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phpu0zWh8"],"error":[0,0],"size":[6910819,52668618]}}
+[2026-01-22 20:22:05] [INFO] 开始处理文件上传...
+[2026-01-22 20:22:05] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_6972166dcf0c87.36368486/
+[2026-01-22 20:22:05] [INFO] 上传的文件数量: 2
+[2026-01-22 20:22:05] [INFO] PHP配置 - upload_max_filesize: 100M, post_max_size: 100M, memory_limit: 256M
+[2026-01-22 20:22:05] [INFO] 开始处理 2 个文件
+[2026-01-22 20:22:05] [INFO] 处理文件 [0]: 2026年1月22日 09_27_47.m4a (大小: 6910819 bytes, 错误代码: 0)
+[2026-01-22 20:22:05] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_6972166dcf0c87.36368486/001_2026___1___22____09_27_47.m4a
+[2026-01-22 20:22:05] [SUCCESS] 文件上传成功: 2026年1月22日 09_27_47.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_6972166dcf0c87.36368486/001_2026___1___22____09_27_47.m4a (实际大小: 6910819 bytes)
+[2026-01-22 20:22:05] [INFO] 处理文件 [1]: 2026年1月22日 09_36_10.m4a (大小: 52668618 bytes, 错误代码: 0)
+[2026-01-22 20:22:05] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_6972166dcf0c87.36368486/002_2026___1___22____09_36_10.m4a
+[2026-01-22 20:22:05] [SUCCESS] 文件上传成功: 2026年1月22日 09_36_10.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_6972166dcf0c87.36368486/002_2026___1___22____09_36_10.m4a (实际大小: 52668618 bytes)
+[2026-01-22 20:22:05] [SUCCESS] 上传完成！成功上传 2 个文件
+[2026-01-22 20:22:05] [INFO] Response Status: 200
+[2026-01-22 20:22:05] [INFO] Response Data: {"success":true,"taskId":"task_6972166dcf0c87.36368486","files":[{"name":"2026年1月22日 09_27_47.m4a","file":"001_2026___1___22____09_27_47.m4a","size":6910819,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"},{"name":"2026年1月22日 09_36_10.m4a","file":"002_2026___1___22____09_36_10.m4a","size":52668618,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/002_2026___1___22____09_36_10.m4a"}],"fileCount":2}
+[2026-01-22 20:22:05] [INFO] === Request End ===
+
+[2026-01-22 20:22:07] [INFO] === Request Start ===
+[2026-01-22 20:22:07] [INFO] Action: merge
+[2026-01-22 20:22:07] [INFO] Method: POST
+[2026-01-22 20:22:07] [INFO] URI: /api.php?action=merge
+[2026-01-22 20:22:07] [INFO] IP: ::1
+[2026-01-22 20:22:07] [INFO] Data: {"action":"merge"}
+[2026-01-22 20:22:07] [INFO] Response Status: 200
+[2026-01-22 20:22:07] [INFO] Response Data: {"success":true,"message":"合并任务已开始","taskId":"task_6972166dcf0c87.36368486","outputFile":"task_6972166dcf0c87.36368486.m4b"}
+[2026-01-22 20:22:07] [INFO] === Request End ===
+
+[2026-01-22 20:22:07] [INFO] === Request Start ===
+[2026-01-22 20:22:07] [INFO] Action: status
+[2026-01-22 20:22:07] [INFO] Method: GET
+[2026-01-22 20:22:07] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:07] [INFO] IP: ::1
+[2026-01-22 20:22:07] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:07] [INFO] Response Status: 200
+[2026-01-22 20:22:07] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:07] [INFO] === Request End ===
+
+[2026-01-22 20:22:09] [INFO] === Request Start ===
+[2026-01-22 20:22:09] [INFO] Action: status
+[2026-01-22 20:22:09] [INFO] Method: GET
+[2026-01-22 20:22:09] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:09] [INFO] IP: ::1
+[2026-01-22 20:22:09] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:09] [INFO] Response Status: 200
+[2026-01-22 20:22:09] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:09] [INFO] === Request End ===
+
+[2026-01-22 20:22:11] [INFO] === Request Start ===
+[2026-01-22 20:22:11] [INFO] Action: status
+[2026-01-22 20:22:11] [INFO] Method: GET
+[2026-01-22 20:22:11] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:11] [INFO] IP: ::1
+[2026-01-22 20:22:11] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:11] [INFO] Response Status: 200
+[2026-01-22 20:22:11] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:11] [INFO] === Request End ===
+
+[2026-01-22 20:22:13] [INFO] === Request Start ===
+[2026-01-22 20:22:13] [INFO] Action: status
+[2026-01-22 20:22:13] [INFO] Method: GET
+[2026-01-22 20:22:13] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:13] [INFO] IP: ::1
+[2026-01-22 20:22:13] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:13] [INFO] Response Status: 200
+[2026-01-22 20:22:13] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:13] [INFO] === Request End ===
+
+[2026-01-22 20:22:15] [INFO] === Request Start ===
+[2026-01-22 20:22:15] [INFO] Action: status
+[2026-01-22 20:22:15] [INFO] Method: GET
+[2026-01-22 20:22:15] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:15] [INFO] IP: ::1
+[2026-01-22 20:22:15] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:15] [INFO] Response Status: 200
+[2026-01-22 20:22:15] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:15] [INFO] === Request End ===
+
+[2026-01-22 20:22:17] [INFO] === Request Start ===
+[2026-01-22 20:22:17] [INFO] Action: status
+[2026-01-22 20:22:17] [INFO] Method: GET
+[2026-01-22 20:22:17] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:17] [INFO] IP: ::1
+[2026-01-22 20:22:17] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:17] [INFO] Response Status: 200
+[2026-01-22 20:22:17] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:17] [INFO] === Request End ===
+
+[2026-01-22 20:22:19] [INFO] === Request Start ===
+[2026-01-22 20:22:19] [INFO] Action: status
+[2026-01-22 20:22:19] [INFO] Method: GET
+[2026-01-22 20:22:19] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:19] [INFO] IP: ::1
+[2026-01-22 20:22:19] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:19] [INFO] Response Status: 200
+[2026-01-22 20:22:19] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:19] [INFO] === Request End ===
+
+[2026-01-22 20:22:21] [INFO] === Request Start ===
+[2026-01-22 20:22:21] [INFO] Action: status
+[2026-01-22 20:22:21] [INFO] Method: GET
+[2026-01-22 20:22:21] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:21] [INFO] IP: ::1
+[2026-01-22 20:22:21] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:21] [INFO] Response Status: 200
+[2026-01-22 20:22:21] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:21] [INFO] === Request End ===
+
+[2026-01-22 20:22:23] [INFO] === Request Start ===
+[2026-01-22 20:22:23] [INFO] Action: status
+[2026-01-22 20:22:23] [INFO] Method: GET
+[2026-01-22 20:22:23] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:23] [INFO] IP: ::1
+[2026-01-22 20:22:23] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:23] [INFO] Response Status: 200
+[2026-01-22 20:22:23] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:23] [INFO] === Request End ===
+
+[2026-01-22 20:22:25] [INFO] === Request Start ===
+[2026-01-22 20:22:25] [INFO] Action: status
+[2026-01-22 20:22:25] [INFO] Method: GET
+[2026-01-22 20:22:25] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:25] [INFO] IP: ::1
+[2026-01-22 20:22:25] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:25] [INFO] Response Status: 200
+[2026-01-22 20:22:25] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:25] [INFO] === Request End ===
+
+[2026-01-22 20:22:27] [INFO] === Request Start ===
+[2026-01-22 20:22:27] [INFO] Action: status
+[2026-01-22 20:22:27] [INFO] Method: GET
+[2026-01-22 20:22:27] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:27] [INFO] IP: ::1
+[2026-01-22 20:22:27] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:27] [INFO] Response Status: 200
+[2026-01-22 20:22:27] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:27] [INFO] === Request End ===
+
+[2026-01-22 20:22:29] [INFO] === Request Start ===
+[2026-01-22 20:22:29] [INFO] Action: status
+[2026-01-22 20:22:29] [INFO] Method: GET
+[2026-01-22 20:22:29] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:29] [INFO] IP: ::1
+[2026-01-22 20:22:29] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:29] [INFO] Response Status: 200
+[2026-01-22 20:22:29] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:29] [INFO] === Request End ===
+
+[2026-01-22 20:22:31] [INFO] === Request Start ===
+[2026-01-22 20:22:31] [INFO] Action: status
+[2026-01-22 20:22:31] [INFO] Method: GET
+[2026-01-22 20:22:31] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:31] [INFO] IP: ::1
+[2026-01-22 20:22:31] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:31] [INFO] Response Status: 200
+[2026-01-22 20:22:31] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:31] [INFO] === Request End ===
+
+[2026-01-22 20:22:33] [INFO] === Request Start ===
+[2026-01-22 20:22:33] [INFO] Action: status
+[2026-01-22 20:22:33] [INFO] Method: GET
+[2026-01-22 20:22:33] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:33] [INFO] IP: ::1
+[2026-01-22 20:22:33] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:33] [INFO] Response Status: 200
+[2026-01-22 20:22:33] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:33] [INFO] === Request End ===
+
+[2026-01-22 20:22:35] [INFO] === Request Start ===
+[2026-01-22 20:22:35] [INFO] Action: status
+[2026-01-22 20:22:35] [INFO] Method: GET
+[2026-01-22 20:22:35] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:35] [INFO] IP: ::1
+[2026-01-22 20:22:35] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:35] [INFO] Response Status: 200
+[2026-01-22 20:22:35] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:35] [INFO] === Request End ===
+
+[2026-01-22 20:22:37] [INFO] === Request Start ===
+[2026-01-22 20:22:37] [INFO] Action: status
+[2026-01-22 20:22:37] [INFO] Method: GET
+[2026-01-22 20:22:37] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:37] [INFO] IP: ::1
+[2026-01-22 20:22:37] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:37] [INFO] Response Status: 200
+[2026-01-22 20:22:37] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:37] [INFO] === Request End ===
+
+[2026-01-22 20:22:39] [INFO] === Request Start ===
+[2026-01-22 20:22:39] [INFO] Action: status
+[2026-01-22 20:22:39] [INFO] Method: GET
+[2026-01-22 20:22:39] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:39] [INFO] IP: ::1
+[2026-01-22 20:22:39] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:39] [INFO] Response Status: 200
+[2026-01-22 20:22:39] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:39] [INFO] === Request End ===
+
+[2026-01-22 20:22:41] [INFO] === Request Start ===
+[2026-01-22 20:22:41] [INFO] Action: status
+[2026-01-22 20:22:41] [INFO] Method: GET
+[2026-01-22 20:22:41] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:41] [INFO] IP: ::1
+[2026-01-22 20:22:41] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:41] [INFO] Response Status: 200
+[2026-01-22 20:22:41] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:41] [INFO] === Request End ===
+
+[2026-01-22 20:22:43] [INFO] === Request Start ===
+[2026-01-22 20:22:43] [INFO] Action: status
+[2026-01-22 20:22:43] [INFO] Method: GET
+[2026-01-22 20:22:43] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:43] [INFO] IP: ::1
+[2026-01-22 20:22:43] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:43] [INFO] Response Status: 200
+[2026-01-22 20:22:43] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:43] [INFO] === Request End ===
+
+[2026-01-22 20:22:45] [INFO] === Request Start ===
+[2026-01-22 20:22:45] [INFO] Action: status
+[2026-01-22 20:22:45] [INFO] Method: GET
+[2026-01-22 20:22:45] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:45] [INFO] IP: ::1
+[2026-01-22 20:22:45] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:45] [INFO] Response Status: 200
+[2026-01-22 20:22:45] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:45] [INFO] === Request End ===
+
+[2026-01-22 20:22:47] [INFO] === Request Start ===
+[2026-01-22 20:22:47] [INFO] Action: status
+[2026-01-22 20:22:47] [INFO] Method: GET
+[2026-01-22 20:22:47] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:47] [INFO] IP: ::1
+[2026-01-22 20:22:47] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:47] [INFO] Response Status: 200
+[2026-01-22 20:22:47] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:47] [INFO] === Request End ===
+
+[2026-01-22 20:22:49] [INFO] === Request Start ===
+[2026-01-22 20:22:49] [INFO] Action: status
+[2026-01-22 20:22:49] [INFO] Method: GET
+[2026-01-22 20:22:49] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:49] [INFO] IP: ::1
+[2026-01-22 20:22:49] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:49] [INFO] Response Status: 200
+[2026-01-22 20:22:49] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:49] [INFO] === Request End ===
+
+[2026-01-22 20:22:51] [INFO] === Request Start ===
+[2026-01-22 20:22:51] [INFO] Action: status
+[2026-01-22 20:22:51] [INFO] Method: GET
+[2026-01-22 20:22:51] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:51] [INFO] IP: ::1
+[2026-01-22 20:22:51] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:51] [INFO] Response Status: 200
+[2026-01-22 20:22:51] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:51] [INFO] === Request End ===
+
+[2026-01-22 20:22:53] [INFO] === Request Start ===
+[2026-01-22 20:22:53] [INFO] Action: status
+[2026-01-22 20:22:53] [INFO] Method: GET
+[2026-01-22 20:22:53] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:53] [INFO] IP: ::1
+[2026-01-22 20:22:53] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:53] [INFO] Response Status: 200
+[2026-01-22 20:22:53] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:53] [INFO] === Request End ===
+
+[2026-01-22 20:22:55] [INFO] === Request Start ===
+[2026-01-22 20:22:55] [INFO] Action: status
+[2026-01-22 20:22:55] [INFO] Method: GET
+[2026-01-22 20:22:55] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:55] [INFO] IP: ::1
+[2026-01-22 20:22:55] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:55] [INFO] Response Status: 200
+[2026-01-22 20:22:55] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:55] [INFO] === Request End ===
+
+[2026-01-22 20:22:57] [INFO] === Request Start ===
+[2026-01-22 20:22:57] [INFO] Action: status
+[2026-01-22 20:22:57] [INFO] Method: GET
+[2026-01-22 20:22:57] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:57] [INFO] IP: ::1
+[2026-01-22 20:22:57] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:57] [INFO] Response Status: 200
+[2026-01-22 20:22:57] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:57] [INFO] === Request End ===
+
+[2026-01-22 20:22:59] [INFO] === Request Start ===
+[2026-01-22 20:22:59] [INFO] Action: status
+[2026-01-22 20:22:59] [INFO] Method: GET
+[2026-01-22 20:22:59] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:22:59] [INFO] IP: ::1
+[2026-01-22 20:22:59] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:22:59] [INFO] Response Status: 200
+[2026-01-22 20:22:59] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:22:59] [INFO] === Request End ===
+
+[2026-01-22 20:23:01] [INFO] === Request Start ===
+[2026-01-22 20:23:01] [INFO] Action: status
+[2026-01-22 20:23:01] [INFO] Method: GET
+[2026-01-22 20:23:01] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:01] [INFO] IP: ::1
+[2026-01-22 20:23:01] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:01] [INFO] Response Status: 200
+[2026-01-22 20:23:01] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:01] [INFO] === Request End ===
+
+[2026-01-22 20:23:03] [INFO] === Request Start ===
+[2026-01-22 20:23:03] [INFO] Action: status
+[2026-01-22 20:23:03] [INFO] Method: GET
+[2026-01-22 20:23:03] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:03] [INFO] IP: ::1
+[2026-01-22 20:23:03] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:03] [INFO] Response Status: 200
+[2026-01-22 20:23:03] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:03] [INFO] === Request End ===
+
+[2026-01-22 20:23:05] [INFO] === Request Start ===
+[2026-01-22 20:23:05] [INFO] Action: status
+[2026-01-22 20:23:05] [INFO] Method: GET
+[2026-01-22 20:23:05] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:05] [INFO] IP: ::1
+[2026-01-22 20:23:05] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:05] [INFO] Response Status: 200
+[2026-01-22 20:23:05] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:05] [INFO] === Request End ===
+
+[2026-01-22 20:23:07] [INFO] === Request Start ===
+[2026-01-22 20:23:07] [INFO] Action: status
+[2026-01-22 20:23:07] [INFO] Method: GET
+[2026-01-22 20:23:07] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:07] [INFO] IP: ::1
+[2026-01-22 20:23:07] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:07] [INFO] Response Status: 200
+[2026-01-22 20:23:07] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:07] [INFO] === Request End ===
+
+[2026-01-22 20:23:09] [INFO] === Request Start ===
+[2026-01-22 20:23:09] [INFO] Action: status
+[2026-01-22 20:23:09] [INFO] Method: GET
+[2026-01-22 20:23:09] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:09] [INFO] IP: ::1
+[2026-01-22 20:23:09] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:09] [INFO] Response Status: 200
+[2026-01-22 20:23:09] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:09] [INFO] === Request End ===
+
+[2026-01-22 20:23:11] [INFO] === Request Start ===
+[2026-01-22 20:23:11] [INFO] Action: status
+[2026-01-22 20:23:11] [INFO] Method: GET
+[2026-01-22 20:23:11] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:11] [INFO] IP: ::1
+[2026-01-22 20:23:11] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:11] [INFO] Response Status: 200
+[2026-01-22 20:23:11] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:11] [INFO] === Request End ===
+
+[2026-01-22 20:23:13] [INFO] === Request Start ===
+[2026-01-22 20:23:13] [INFO] Action: status
+[2026-01-22 20:23:13] [INFO] Method: GET
+[2026-01-22 20:23:13] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:13] [INFO] IP: ::1
+[2026-01-22 20:23:13] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:13] [INFO] Response Status: 200
+[2026-01-22 20:23:13] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:13] [INFO] === Request End ===
+
+[2026-01-22 20:23:15] [INFO] === Request Start ===
+[2026-01-22 20:23:15] [INFO] Action: status
+[2026-01-22 20:23:15] [INFO] Method: GET
+[2026-01-22 20:23:15] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:15] [INFO] IP: ::1
+[2026-01-22 20:23:15] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:15] [INFO] Response Status: 200
+[2026-01-22 20:23:15] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:15] [INFO] === Request End ===
+
+[2026-01-22 20:23:17] [INFO] === Request Start ===
+[2026-01-22 20:23:17] [INFO] Action: status
+[2026-01-22 20:23:17] [INFO] Method: GET
+[2026-01-22 20:23:17] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:17] [INFO] IP: ::1
+[2026-01-22 20:23:17] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:17] [INFO] Response Status: 200
+[2026-01-22 20:23:17] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:17] [INFO] === Request End ===
+
+[2026-01-22 20:23:19] [INFO] === Request Start ===
+[2026-01-22 20:23:19] [INFO] Action: status
+[2026-01-22 20:23:19] [INFO] Method: GET
+[2026-01-22 20:23:19] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:19] [INFO] IP: ::1
+[2026-01-22 20:23:19] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:19] [INFO] Response Status: 200
+[2026-01-22 20:23:19] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:19] [INFO] === Request End ===
+
+[2026-01-22 20:23:21] [INFO] === Request Start ===
+[2026-01-22 20:23:21] [INFO] Action: status
+[2026-01-22 20:23:21] [INFO] Method: GET
+[2026-01-22 20:23:21] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:21] [INFO] IP: ::1
+[2026-01-22 20:23:21] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:21] [INFO] Response Status: 200
+[2026-01-22 20:23:21] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":false,"outputSize":0}
+[2026-01-22 20:23:21] [INFO] === Request End ===
+
+[2026-01-22 20:23:23] [INFO] === Request Start ===
+[2026-01-22 20:23:23] [INFO] Action: status
+[2026-01-22 20:23:23] [INFO] Method: GET
+[2026-01-22 20:23:23] [INFO] URI: /api.php?action=status&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:23] [INFO] IP: ::1
+[2026-01-22 20:23:23] [INFO] Data: {"action":"status","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:23] [INFO] Response Status: 200
+[2026-01-22 20:23:23] [INFO] Response Data: {"success":true,"status":"completed","progress":100,"log":["extracting cover to \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/cover.jpg failed - maybe there was no cover embedded in \/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_6972166dcf0c87.36368486\/001_2026___1___22____09_27_47.m4a"],"outputExists":true,"outputSize":54135121}
+[2026-01-22 20:23:23] [INFO] === Request End ===
+
+[2026-01-22 20:23:23] [INFO] === Request Start ===
+[2026-01-22 20:23:23] [INFO] Action: list_output
+[2026-01-22 20:23:23] [INFO] Method: GET
+[2026-01-22 20:23:23] [INFO] URI: /api.php?action=list_output&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:23] [INFO] IP: ::1
+[2026-01-22 20:23:23] [INFO] Data: {"action":"list_output","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:23:23] [INFO] Response Status: 200
+[2026-01-22 20:23:23] [INFO] Response Data: {"success":true,"files":[{"name":"task_6972166dcf0c87.36368486.m4b","size":54135121,"type":"merge","downloadUrl":"?action=download&taskId=task_6972166dcf0c87.36368486"}]}
+[2026-01-22 20:23:23] [INFO] === Request End ===
+
+[2026-01-22 20:23:28] [INFO] === Request Start ===
+[2026-01-22 20:23:28] [INFO] Action: download
+[2026-01-22 20:23:28] [INFO] Method: GET
+[2026-01-22 20:23:28] [INFO] URI: /api.php?action=download&taskId=task_6972166dcf0c87.36368486&taskId=task_6972166dcf0c87.36368486
+[2026-01-22 20:23:28] [INFO] IP: ::1
+[2026-01-22 20:23:28] [INFO] Data: {"action":"download","taskId":"task_6972166dcf0c87.36368486"}
+[2026-01-22 20:28:57] [INFO] === Request Start ===
+[2026-01-22 20:28:57] [INFO] Action: upload
+[2026-01-22 20:28:57] [INFO] Method: POST
+[2026-01-22 20:28:57] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:28:57] [INFO] IP: ::1
+[2026-01-22 20:28:57] [INFO] Data: {"action":"upload"}
+[2026-01-22 20:28:57] [INFO] Files: {"files":{"name":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"full_path":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"type":["audio\/x-m4a","audio\/x-m4a"],"tmp_name":["\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phptZzKGN","\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/php3m8Hmu"],"error":[0,0],"size":[6910819,52668618]}}
+[2026-01-22 20:28:57] [INFO] === Request Start ===
+[2026-01-22 20:28:57] [INFO] Action: upload
+[2026-01-22 20:28:57] [INFO] Method: POST
+[2026-01-22 20:28:57] [INFO] URI: /api.php?action=upload
+[2026-01-22 20:28:57] [INFO] IP: ::1
+[2026-01-22 20:28:57] [INFO] Files: {"files":{"name":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"full_path":["2026年1月22日 09_27_47.m4a","2026年1月22日 09_36_10.m4a"],"type":["audio\/x-m4a","audio\/x-m4a"],"tmp_name":["\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/phptZzKGN","\/private\/var\/folders\/wd\/7b2dhq1n4vbbbwpycxybkn6h0000gn\/T\/php3m8Hmu"],"error":[0,0],"size":[6910819,52668618]}}
+[2026-01-22 20:28:57] [INFO] 开始处理文件上传...
+[2026-01-22 20:28:57] [INFO] 任务目录创建成功: /Users/wangdafeng/m4b-tool/web/uploads/task_69721809dbce22.89958701/
+[2026-01-22 20:28:57] [INFO] 上传的文件数量: 2
+[2026-01-22 20:28:57] [INFO] PHP配置 - upload_max_filesize: 100M, post_max_size: 100M, memory_limit: 256M
+[2026-01-22 20:28:57] [INFO] 开始处理 2 个文件
+[2026-01-22 20:28:57] [INFO] 处理文件 [0]: 2026年1月22日 09_27_47.m4a (大小: 6910819 bytes, 错误代码: 0)
+[2026-01-22 20:28:57] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_69721809dbce22.89958701/001_2026___1___22____09_27_47.m4a
+[2026-01-22 20:28:57] [SUCCESS] 文件上传成功: 2026年1月22日 09_27_47.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_69721809dbce22.89958701/001_2026___1___22____09_27_47.m4a (实际大小: 6910819 bytes)
+[2026-01-22 20:28:57] [INFO] 处理文件 [1]: 2026年1月22日 09_36_10.m4a (大小: 52668618 bytes, 错误代码: 0)
+[2026-01-22 20:28:57] [INFO] 目标文件: /Users/wangdafeng/m4b-tool/web/uploads/task_69721809dbce22.89958701/002_2026___1___22____09_36_10.m4a
+[2026-01-22 20:28:57] [SUCCESS] 文件上传成功: 2026年1月22日 09_36_10.m4a -> /Users/wangdafeng/m4b-tool/web/uploads/task_69721809dbce22.89958701/002_2026___1___22____09_36_10.m4a (实际大小: 52668618 bytes)
+[2026-01-22 20:28:57] [SUCCESS] 上传完成！成功上传 2 个文件
+[2026-01-22 20:28:57] [INFO] Response Status: 200
+[2026-01-22 20:28:57] [INFO] Response Data: {"success":true,"taskId":"task_69721809dbce22.89958701","files":[{"name":"2026年1月22日 09_27_47.m4a","file":"001_2026___1___22____09_27_47.m4a","size":6910819,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_69721809dbce22.89958701\/001_2026___1___22____09_27_47.m4a"},{"name":"2026年1月22日 09_36_10.m4a","file":"002_2026___1___22____09_36_10.m4a","size":52668618,"path":"\/Users\/wangdafeng\/m4b-tool\/web\/uploads\/task_69721809dbce22.89958701\/002_2026___1___22____09_36_10.m4a"}],"fileCount":2}
+[2026-01-22 20:28:57] [INFO] === Request End ===
+
+[2026-01-22 20:29:00] [INFO] === Request Start ===
+[2026-01-22 20:29:00] [INFO] Action: merge
+[2026-01-22 20:29:00] [INFO] Method: POST
+[2026-01-22 20:29:00] [INFO] URI: /api.php?action=merge
+[2026-01-22 20:29:00] [INFO] IP: ::1
+[2026-01-22 20:29:00] [INFO] Data: {"action":"merge"}
+[2026-01-22 20:29:00] [INFO] Response Status: 200
+[2026-01-22 20:29:00] [INFO] Response Data: {"success":true,"message":"合并任务已开始","taskId":"task_69721809dbce22.89958701","outputFile":"task_69721809dbce22.89958701.m4b"}
+[2026-01-22 20:29:00] [INFO] === Request End ===
+
+[2026-01-22 20:29:00] [INFO] === Request Start ===
+[2026-01-22 20:29:00] [INFO] Action: status
+[2026-01-22 20:29:00] [INFO] Method: GET
+[2026-01-22 20:29:00] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:00] [INFO] IP: ::1
+[2026-01-22 20:29:00] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:00] [INFO] Response Status: 200
+[2026-01-22 20:29:00] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:00] [INFO] === Request End ===
+
+[2026-01-22 20:29:02] [INFO] === Request Start ===
+[2026-01-22 20:29:02] [INFO] Action: status
+[2026-01-22 20:29:02] [INFO] Method: GET
+[2026-01-22 20:29:02] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:02] [INFO] IP: ::1
+[2026-01-22 20:29:02] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:02] [INFO] Response Status: 200
+[2026-01-22 20:29:02] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:02] [INFO] === Request End ===
+
+[2026-01-22 20:29:04] [INFO] === Request Start ===
+[2026-01-22 20:29:04] [INFO] Action: status
+[2026-01-22 20:29:04] [INFO] Method: GET
+[2026-01-22 20:29:04] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:04] [INFO] IP: ::1
+[2026-01-22 20:29:04] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:04] [INFO] Response Status: 200
+[2026-01-22 20:29:04] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:04] [INFO] === Request End ===
+
+[2026-01-22 20:29:06] [INFO] === Request Start ===
+[2026-01-22 20:29:06] [INFO] Action: status
+[2026-01-22 20:29:06] [INFO] Method: GET
+[2026-01-22 20:29:06] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:06] [INFO] IP: ::1
+[2026-01-22 20:29:06] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:06] [INFO] Response Status: 200
+[2026-01-22 20:29:06] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:06] [INFO] === Request End ===
+
+[2026-01-22 20:29:08] [INFO] === Request Start ===
+[2026-01-22 20:29:08] [INFO] Action: status
+[2026-01-22 20:29:08] [INFO] Method: GET
+[2026-01-22 20:29:08] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:08] [INFO] IP: ::1
+[2026-01-22 20:29:08] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:08] [INFO] Response Status: 200
+[2026-01-22 20:29:08] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:08] [INFO] === Request End ===
+
+[2026-01-22 20:29:10] [INFO] === Request Start ===
+[2026-01-22 20:29:10] [INFO] Action: status
+[2026-01-22 20:29:10] [INFO] Method: GET
+[2026-01-22 20:29:10] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:10] [INFO] IP: ::1
+[2026-01-22 20:29:10] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:10] [INFO] Response Status: 200
+[2026-01-22 20:29:10] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:10] [INFO] === Request End ===
+
+[2026-01-22 20:29:12] [INFO] === Request Start ===
+[2026-01-22 20:29:12] [INFO] Action: status
+[2026-01-22 20:29:12] [INFO] Method: GET
+[2026-01-22 20:29:12] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:12] [INFO] IP: ::1
+[2026-01-22 20:29:12] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:12] [INFO] Response Status: 200
+[2026-01-22 20:29:12] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:12] [INFO] === Request End ===
+
+[2026-01-22 20:29:14] [INFO] === Request Start ===
+[2026-01-22 20:29:14] [INFO] Action: status
+[2026-01-22 20:29:14] [INFO] Method: GET
+[2026-01-22 20:29:14] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:14] [INFO] IP: ::1
+[2026-01-22 20:29:14] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:14] [INFO] Response Status: 200
+[2026-01-22 20:29:14] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:14] [INFO] === Request End ===
+
+[2026-01-22 20:29:16] [INFO] === Request Start ===
+[2026-01-22 20:29:16] [INFO] Action: status
+[2026-01-22 20:29:16] [INFO] Method: GET
+[2026-01-22 20:29:16] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:16] [INFO] IP: ::1
+[2026-01-22 20:29:16] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:16] [INFO] Response Status: 200
+[2026-01-22 20:29:16] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:16] [INFO] === Request End ===
+
+[2026-01-22 20:29:18] [INFO] === Request Start ===
+[2026-01-22 20:29:18] [INFO] Action: status
+[2026-01-22 20:29:18] [INFO] Method: GET
+[2026-01-22 20:29:18] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:18] [INFO] IP: ::1
+[2026-01-22 20:29:18] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:18] [INFO] Response Status: 200
+[2026-01-22 20:29:18] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:18] [INFO] === Request End ===
+
+[2026-01-22 20:29:20] [INFO] === Request Start ===
+[2026-01-22 20:29:20] [INFO] Action: status
+[2026-01-22 20:29:20] [INFO] Method: GET
+[2026-01-22 20:29:20] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:20] [INFO] IP: ::1
+[2026-01-22 20:29:20] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:20] [INFO] Response Status: 200
+[2026-01-22 20:29:20] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:20] [INFO] === Request End ===
+
+[2026-01-22 20:29:22] [INFO] === Request Start ===
+[2026-01-22 20:29:22] [INFO] Action: status
+[2026-01-22 20:29:22] [INFO] Method: GET
+[2026-01-22 20:29:22] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:22] [INFO] IP: ::1
+[2026-01-22 20:29:22] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:22] [INFO] Response Status: 200
+[2026-01-22 20:29:22] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:22] [INFO] === Request End ===
+
+[2026-01-22 20:29:24] [INFO] === Request Start ===
+[2026-01-22 20:29:24] [INFO] Action: status
+[2026-01-22 20:29:24] [INFO] Method: GET
+[2026-01-22 20:29:24] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:24] [INFO] IP: ::1
+[2026-01-22 20:29:24] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:24] [INFO] Response Status: 200
+[2026-01-22 20:29:24] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:24] [INFO] === Request End ===
+
+[2026-01-22 20:29:26] [INFO] === Request Start ===
+[2026-01-22 20:29:26] [INFO] Action: status
+[2026-01-22 20:29:26] [INFO] Method: GET
+[2026-01-22 20:29:26] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:26] [INFO] IP: ::1
+[2026-01-22 20:29:26] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:26] [INFO] Response Status: 200
+[2026-01-22 20:29:26] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:26] [INFO] === Request End ===
+
+[2026-01-22 20:29:28] [INFO] === Request Start ===
+[2026-01-22 20:29:28] [INFO] Action: status
+[2026-01-22 20:29:28] [INFO] Method: GET
+[2026-01-22 20:29:28] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:28] [INFO] IP: ::1
+[2026-01-22 20:29:28] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:28] [INFO] Response Status: 200
+[2026-01-22 20:29:28] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:28] [INFO] === Request End ===
+
+[2026-01-22 20:29:30] [INFO] === Request Start ===
+[2026-01-22 20:29:30] [INFO] Action: status
+[2026-01-22 20:29:30] [INFO] Method: GET
+[2026-01-22 20:29:30] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:30] [INFO] IP: ::1
+[2026-01-22 20:29:30] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:30] [INFO] Response Status: 200
+[2026-01-22 20:29:30] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:30] [INFO] === Request End ===
+
+[2026-01-22 20:29:32] [INFO] === Request Start ===
+[2026-01-22 20:29:32] [INFO] Action: status
+[2026-01-22 20:29:32] [INFO] Method: GET
+[2026-01-22 20:29:32] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:32] [INFO] IP: ::1
+[2026-01-22 20:29:32] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:32] [INFO] Response Status: 200
+[2026-01-22 20:29:32] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:32] [INFO] === Request End ===
+
+[2026-01-22 20:29:34] [INFO] === Request Start ===
+[2026-01-22 20:29:34] [INFO] Action: status
+[2026-01-22 20:29:34] [INFO] Method: GET
+[2026-01-22 20:29:34] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:34] [INFO] IP: ::1
+[2026-01-22 20:29:34] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:34] [INFO] Response Status: 200
+[2026-01-22 20:29:34] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:34] [INFO] === Request End ===
+
+[2026-01-22 20:29:36] [INFO] === Request Start ===
+[2026-01-22 20:29:36] [INFO] Action: status
+[2026-01-22 20:29:36] [INFO] Method: GET
+[2026-01-22 20:29:36] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:36] [INFO] IP: ::1
+[2026-01-22 20:29:36] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:36] [INFO] Response Status: 200
+[2026-01-22 20:29:36] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:36] [INFO] === Request End ===
+
+[2026-01-22 20:29:38] [INFO] === Request Start ===
+[2026-01-22 20:29:38] [INFO] Action: status
+[2026-01-22 20:29:38] [INFO] Method: GET
+[2026-01-22 20:29:38] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:38] [INFO] IP: ::1
+[2026-01-22 20:29:38] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:38] [INFO] Response Status: 200
+[2026-01-22 20:29:38] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:38] [INFO] === Request End ===
+
+[2026-01-22 20:29:40] [INFO] === Request Start ===
+[2026-01-22 20:29:40] [INFO] Action: status
+[2026-01-22 20:29:40] [INFO] Method: GET
+[2026-01-22 20:29:40] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:40] [INFO] IP: ::1
+[2026-01-22 20:29:40] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:40] [INFO] Response Status: 200
+[2026-01-22 20:29:40] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:40] [INFO] === Request End ===
+
+[2026-01-22 20:29:42] [INFO] === Request Start ===
+[2026-01-22 20:29:42] [INFO] Action: status
+[2026-01-22 20:29:42] [INFO] Method: GET
+[2026-01-22 20:29:42] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:42] [INFO] IP: ::1
+[2026-01-22 20:29:42] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:42] [INFO] Response Status: 200
+[2026-01-22 20:29:42] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:42] [INFO] === Request End ===
+
+[2026-01-22 20:29:44] [INFO] === Request Start ===
+[2026-01-22 20:29:44] [INFO] Action: status
+[2026-01-22 20:29:44] [INFO] Method: GET
+[2026-01-22 20:29:44] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:44] [INFO] IP: ::1
+[2026-01-22 20:29:44] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:44] [INFO] Response Status: 200
+[2026-01-22 20:29:44] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:44] [INFO] === Request End ===
+
+[2026-01-22 20:29:45] [INFO] === Request Start ===
+[2026-01-22 20:29:45] [INFO] Action: reorder
+[2026-01-22 20:29:45] [INFO] Method: POST
+[2026-01-22 20:29:45] [INFO] URI: /api.php?action=reorder
+[2026-01-22 20:29:45] [INFO] IP: ::1
+[2026-01-22 20:29:45] [INFO] Data: {"action":"reorder"}
+[2026-01-22 20:29:45] [INFO] Response Status: 200
+[2026-01-22 20:29:45] [INFO] Response Data: {"success":true,"message":"顺序已更新"}
+[2026-01-22 20:29:45] [INFO] === Request End ===
+
+[2026-01-22 20:29:46] [INFO] === Request Start ===
+[2026-01-22 20:29:46] [INFO] Action: status
+[2026-01-22 20:29:46] [INFO] Method: GET
+[2026-01-22 20:29:46] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:46] [INFO] IP: ::1
+[2026-01-22 20:29:46] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:46] [INFO] Response Status: 200
+[2026-01-22 20:29:46] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:46] [INFO] === Request End ===
+
+[2026-01-22 20:29:48] [INFO] === Request Start ===
+[2026-01-22 20:29:48] [INFO] Action: status
+[2026-01-22 20:29:48] [INFO] Method: GET
+[2026-01-22 20:29:48] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:48] [INFO] IP: ::1
+[2026-01-22 20:29:48] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:48] [INFO] Response Status: 200
+[2026-01-22 20:29:48] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:48] [INFO] === Request End ===
+
+[2026-01-22 20:29:50] [INFO] === Request Start ===
+[2026-01-22 20:29:50] [INFO] Action: status
+[2026-01-22 20:29:50] [INFO] Method: GET
+[2026-01-22 20:29:50] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:50] [INFO] IP: ::1
+[2026-01-22 20:29:50] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:50] [INFO] Response Status: 200
+[2026-01-22 20:29:50] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:50] [INFO] === Request End ===
+
+[2026-01-22 20:29:53] [INFO] === Request Start ===
+[2026-01-22 20:29:53] [INFO] Action: status
+[2026-01-22 20:29:53] [INFO] Method: GET
+[2026-01-22 20:29:53] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:53] [INFO] IP: ::1
+[2026-01-22 20:29:53] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:53] [INFO] Response Status: 200
+[2026-01-22 20:29:53] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:53] [INFO] === Request End ===
+
+[2026-01-22 20:29:55] [INFO] === Request Start ===
+[2026-01-22 20:29:55] [INFO] Action: status
+[2026-01-22 20:29:55] [INFO] Method: GET
+[2026-01-22 20:29:55] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:55] [INFO] IP: ::1
+[2026-01-22 20:29:55] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:55] [INFO] Response Status: 200
+[2026-01-22 20:29:55] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:55] [INFO] === Request End ===
+
+[2026-01-22 20:29:57] [INFO] === Request Start ===
+[2026-01-22 20:29:57] [INFO] Action: status
+[2026-01-22 20:29:57] [INFO] Method: GET
+[2026-01-22 20:29:57] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:57] [INFO] IP: ::1
+[2026-01-22 20:29:57] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:57] [INFO] Response Status: 200
+[2026-01-22 20:29:57] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:57] [INFO] === Request End ===
+
+[2026-01-22 20:29:59] [INFO] === Request Start ===
+[2026-01-22 20:29:59] [INFO] Action: status
+[2026-01-22 20:29:59] [INFO] Method: GET
+[2026-01-22 20:29:59] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:29:59] [INFO] IP: ::1
+[2026-01-22 20:29:59] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:29:59] [INFO] Response Status: 200
+[2026-01-22 20:29:59] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:29:59] [INFO] === Request End ===
+
+[2026-01-22 20:30:01] [INFO] === Request Start ===
+[2026-01-22 20:30:01] [INFO] Action: status
+[2026-01-22 20:30:01] [INFO] Method: GET
+[2026-01-22 20:30:01] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:30:01] [INFO] IP: ::1
+[2026-01-22 20:30:01] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:30:01] [INFO] Response Status: 200
+[2026-01-22 20:30:01] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:30:01] [INFO] === Request End ===
+
+[2026-01-22 20:30:03] [INFO] === Request Start ===
+[2026-01-22 20:30:03] [INFO] Action: status
+[2026-01-22 20:30:03] [INFO] Method: GET
+[2026-01-22 20:30:03] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:30:03] [INFO] IP: ::1
+[2026-01-22 20:30:03] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:30:03] [INFO] Response Status: 200
+[2026-01-22 20:30:03] [INFO] Response Data: {"success":true,"status":"processing","progress":0,"log":[],"outputExists":false,"outputSize":0}
+[2026-01-22 20:30:03] [INFO] === Request End ===
+
+[2026-01-22 20:30:05] [INFO] === Request Start ===
+[2026-01-22 20:30:05] [INFO] Action: status
+[2026-01-22 20:30:05] [INFO] Method: GET
+[2026-01-22 20:30:05] [INFO] URI: /api.php?action=status&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:30:05] [INFO] IP: ::1
+[2026-01-22 20:30:05] [INFO] Data: {"action":"status","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:30:05] [INFO] Response Status: 200
+[2026-01-22 20:30:05] [INFO] Response Data: {"success":true,"status":"completed","progress":100,"log":[],"outputExists":true,"outputSize":54135121}
+[2026-01-22 20:30:05] [INFO] === Request End ===
+
+[2026-01-22 20:30:05] [INFO] === Request Start ===
+[2026-01-22 20:30:05] [INFO] Action: list_output
+[2026-01-22 20:30:05] [INFO] Method: GET
+[2026-01-22 20:30:05] [INFO] URI: /api.php?action=list_output&taskId=task_69721809dbce22.89958701
+[2026-01-22 20:30:05] [INFO] IP: ::1
+[2026-01-22 20:30:05] [INFO] Data: {"action":"list_output","taskId":"task_69721809dbce22.89958701"}
+[2026-01-22 20:30:05] [INFO] Response Status: 200
+[2026-01-22 20:30:05] [INFO] Response Data: {"success":true,"files":[{"name":"task_69721809dbce22.89958701.m4b","size":54135121,"type":"merge","downloadUrl":"?action=download&taskId=task_69721809dbce22.89958701"}]}
+[2026-01-22 20:30:05] [INFO] === Request End ===
+

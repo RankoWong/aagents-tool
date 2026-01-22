@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m4b-tool Web界面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #6c757d;
+            transition: all 0.3s;
+            background: none;
+            border: none;
+        }
+
+        .tab:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .tab.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 15px;
+            padding: 60px 20px;
+            text-align: center;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .upload-area:hover, .upload-area.dragover {
+            background: #e9ecef;
+            border-color: #764ba2;
+            transform: scale(1.02);
+        }
+
+        .upload-area i {
+            font-size: 4em;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .upload-area p {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .upload-area .hint {
+            font-size: 1em;
+            color: #495057;
+            font-weight: 600;
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .upload-area .sub-hint {
+            font-size: 0.85em;
+            color: #adb5bd;
+            margin-top: 15px;
+        }
+
+        .file-list {
+            margin-bottom: 30px;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+
+        .file-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .file-item.dragging {
+            opacity: 0.5;
+            background: #fff3cd;
+        }
+
+        .file-drag-handle {
+            cursor: move;
+            padding: 0 15px;
+            color: #adb5bd;
+            font-size: 1.5em;
+        }
+
+        .file-info {
+            flex: 1;
+        }
+
+        .file-name {
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 5px;
+        }
+
+        .file-size {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .file-remove {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .file-remove:hover {
+            background: #c82333;
+        }
+
+        .options {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .options h3 {
+            margin-bottom: 20px;
+            color: #495057;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .progress-area {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .progress-area.active {
+            display: block;
+        }
+
+        .progress-bar-container {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 30px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .progress-log {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        .result-area {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .result-area.active {
+            display: block;
+        }
+
+        .result-card {
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .result-card h4 {
+            color: #155724;
+            margin-bottom: 15px;
+        }
+
+        .download-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+
+        .download-link:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .alert {
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .alert-danger {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 2px solid #bee5eb;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎧 m4b-tool Web界面</h1>
+            <p>简单易用的有声读物合并与分割工具</p>
+            <p style="margin-top: 15px;">
+                <a href="logs.html" target="_blank" style="color: white; text-decoration: underline; opacity: 0.8;">
+                    📋 查看日志（调试用）
+                </a>
+            </p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="merge">📦 合并</button>
+            <button class="tab" data-tab="split">✂️ 分割</button>
+        </div>
+
+        <div class="content">
+            <!-- 合并标签页 -->
+            <div id="merge-tab" class="tab-content active">
+                <div class="upload-area" id="merge-upload-area">
+                    <i>📁</i>
+                    <p><strong>点击或拖拽多个音频文件到这里</strong></p>
+                    <p class="hint">✨ 支持一次选择多个文件（按住 Cmd/Ctrl 选择）</p>
+                    <p class="sub-hint">支持格式：MP3, M4A, M4B, AAC, OGG, FLAC, WAV, WMA</p>
+                    <input type="file" id="merge-file-input" multiple accept=".mp3,.m4a,.m4b,.aac,.ogg,.flac,.wav,.wma" style="display: none;">
+                </div>
+
+                <div class="file-list" id="merge-file-list"></div>
+
+                <div id="add-more-files-area" style="display: none; margin-bottom: 20px;">
+                    <button class="btn btn-secondary" onclick="document.getElementById('merge-file-input').click()">
+                        ➕ 添加更多文件
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetMergeUpload()" style="margin-left: 10px;">
+                        🔄 开始新任务
+                    </button>
+                    <span style="margin-left: 15px; color: #6c757d;">当前已选择 <strong id="file-count">0</strong> 个文件</span>
+                </div>
+
+                <div class="options" style="display: none;">
+                    <h3>合并选项</h3>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>标题</label>
+                            <input type="text" id="merge-name" placeholder="例如：哈利波特与魔法石">
+                        </div>
+                        <div class="col form-group">
+                            <label>作者/朗读者</label>
+                            <input type="text" id="merge-artist" placeholder="例如：J.K. Rowling">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>专辑</label>
+                            <input type="text" id="merge-album" placeholder="例如：哈利波特系列">
+                        </div>
+                        <div class="col form-group">
+                            <label>类型</label>
+                            <input type="text" id="merge-genre" placeholder="例如：Fantasy">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>音频比特率</label>
+                        <select id="merge-bitrate">
+                            <option value="">默认</option>
+                            <option value="64k">64k (低质量)</option>
+                            <option value="96k" selected>96k (中等质量)</option>
+                            <option value="128k">128k (高质量)</option>
+                            <option value="192k">192k (极高质量)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" id="merge-btn" disabled>🚀 开始合并</button>
+                <button class="btn btn-secondary" id="merge-clear-btn">清空文件</button>
+
+                <div class="progress-area" id="merge-progress">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="merge-progress-bar" style="width: 0%">0%</div>
+                    </div>
+                    <div class="progress-log" id="merge-progress-log"></div>
+                </div>
+
+                <div class="result-area" id="merge-result"></div>
+            </div>
+
+            <!-- 分割标签页 -->
+            <div id="split-tab" class="tab-content">
+                <div class="upload-area" id="split-upload-area">
+                    <i>📁</i>
+                    <p>点击选择要分割的音频文件</p>
+                    <p class="hint">支持 M4B, MP3, M4A 等格式</p>
+                    <input type="file" id="split-file-input" accept=".m4b,.mp3,.m4a,.aac" style="display: none;">
+                </div>
+
+                <div class="file-list" id="split-file-info"></div>
+
+                <div class="options">
+                    <h3>分割选项</h3>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>输出格式</label>
+                            <select id="split-format">
+                                <option value="mp3" selected>MP3</option>
+                                <option value="m4b">M4B</option>
+                                <option value="m4a">M4A</option>
+                                <option value="aac">AAC</option>
+                            </select>
+                        </div>
+                        <div class="col form-group">
+                            <label>音频比特率</label>
+                            <select id="split-bitrate">
+                                <option value="64k" selected>64k</option>
+                                <option value="96k">96k</option>
+                                <option value="128k">128k</option>
+                                <option value="192k">192k</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>音频通道</label>
+                        <select id="split-channels">
+                            <option value="1" selected>单声道 (适合有声书)</option>
+                            <option value="2">立体声</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" id="split-btn" disabled>✂️ 开始分割</button>
+
+                <div class="progress-area" id="split-progress">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="split-progress-bar" style="width: 0%">0%</div>
+                    </div>
+                    <div class="progress-log" id="split-progress-log"></div>
+                </div>
+
+                <div class="result-area" id="split-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 配置
+        const API_BASE = 'api.php';
+
+        // 状态
+        let mergeFiles = [];
+        let mergeTaskId = null;
+        let splitFile = null;
+        let splitTaskId = null;
+
+        // 工具函数
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+
+        function showAlert(message, type = 'info') {
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type}`;
+            alert.textContent = message;
+            document.querySelector('.content').insertBefore(alert, document.querySelector('.tab-content.active'));
+
+            setTimeout(() => alert.remove(), 5000);
+        }
+
+        // 标签页切换
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(`${tab.dataset.tab}-tab`).classList.add('active');
+            });
+        });
+
+        // ========== 合并功能 ==========
+
+        const mergeUploadArea = document.getElementById('merge-upload-area');
+        const mergeFileInput = document.getElementById('merge-file-input');
+        const mergeFileList = document.getElementById('merge-file-list');
+        const mergeBtn = document.getElementById('merge-btn');
+        const mergeClearBtn = document.getElementById('merge-clear-btn');
+
+        // 点击上传
+        mergeUploadArea.addEventListener('click', () => mergeFileInput.click());
+
+        // 拖拽上传
+        mergeUploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            mergeUploadArea.classList.add('dragover');
+        });
+
+        mergeUploadArea.addEventListener('dragleave', () => {
+            mergeUploadArea.classList.remove('dragover');
+        });
+
+        mergeUploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            mergeUploadArea.classList.remove('dragover');
+            handleMergeFiles(e.dataTransfer.files);
+        });
+
+        mergeFileInput.addEventListener('change', (e) => {
+            handleMergeFiles(e.target.files);
+        });
+
+        function handleMergeFiles(files) {
+            if (files.length === 0) return;
+
+            console.log('开始上传文件...', files);
+
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files[]', files[i]);
+            }
+
+            // 如果已有任务ID，发送给服务器以便追加文件
+            if (mergeTaskId) {
+                formData.append('taskId', mergeTaskId);
+                console.log('追加到现有任务:', mergeTaskId);
+            }
+
+            console.log('FormData准备完成，文件数量:', files.length);
+
+            fetch(`${API_BASE}?action=upload`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => {
+                console.log('响应状态:', res.status);
+                return res.json();
+            })
+            .then(data => {
+                console.log('响应数据:', data);
+
+                if (data.success) {
+                    // 如果已经有任务ID，说明是追加文件
+                    if (mergeTaskId && mergeTaskId === data.taskId) {
+                        // 追加模式：合并文件列表
+                        mergeFiles = [...mergeFiles, ...data.files];
+                    } else {
+                        // 新任务
+                        mergeTaskId = data.taskId;
+                        mergeFiles = data.files;
+                    }
+
+                    renderMergeFileList();
+                    mergeBtn.disabled = false;
+                    showAlert(`✅ 成功上传 ${data.fileCount} 个文件`, 'success');
+
+                    // 隐藏上传区域，显示添加更多按钮
+                    document.getElementById('merge-upload-area').style.display = 'none';
+                    document.getElementById('add-more-files-area').style.display = 'block';
+                    updateFileCount();
+                } else {
+                    let errorMsg = data.error || '上传失败';
+
+                    // 如果有调试信息，显示出来
+                    if (data.debug) {
+                        console.error('调试信息:', data.debug);
+                        errorMsg += '\n\n调试信息:\n' + JSON.stringify(data.debug, null, 2);
+                    }
+
+                    showAlert(errorMsg, 'danger');
+                }
+            })
+            .catch(err => {
+                console.error('上传错误:', err);
+                showAlert('❌ 上传失败：' + err.message + '\n\n请查看控制台获取详细错误信息', 'danger');
+            });
+        }
+
+        function updateFileCount() {
+            document.getElementById('file-count').textContent = mergeFiles.length;
+        }
+
+        function resetMergeUpload() {
+            mergeTaskId = null;
+            mergeFiles = [];
+            document.getElementById('merge-file-list').innerHTML = '';
+            document.getElementById('merge-upload-area').style.display = 'block';
+            document.getElementById('add-more-files-area').style.display = 'none';
+            mergeBtn.disabled = true;
+            // 清空文件输入框，这样可以选择相同的文件
+            document.getElementById('merge-file-input').value = '';
+            // 隐藏进度和结果区域
+            document.getElementById('merge-progress').classList.remove('active');
+            document.getElementById('merge-result').classList.remove('active');
+        }
+
+        function renderMergeFileList() {
+            mergeFileList.innerHTML = '';
+
+            mergeFiles.forEach((file, index) => {
+                const div = document.createElement('div');
+                div.className = 'file-item';
+                div.draggable = true;
+                div.dataset.index = index;
+                div.innerHTML = `
+                    <span class="file-drag-handle">☰</span>
+                    <div class="file-info">
+                        <div class="file-name">${file.name}</div>
+                        <div class="file-size">${formatFileSize(file.size)}</div>
+                    </div>
+                    <button class="file-remove" onclick="removeMergeFile(${index})">删除</button>
+                `;
+
+                // 拖拽排序
+                div.addEventListener('dragstart', (e) => {
+                    div.classList.add('dragging');
+                    e.dataTransfer.effectAllowed = 'move';
+                });
+
+                div.addEventListener('dragend', () => {
+                    div.classList.remove('dragging');
+                    updateMergeOrder();
+                });
+
+                div.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    const dragging = document.querySelector('.dragging');
+                    if (dragging !== div) {
+                        const rect = div.getBoundingClientRect();
+                        const midY = rect.top + rect.height / 2;
+                        if (e.clientY < midY) {
+                            div.parentNode.insertBefore(dragging, div);
+                        } else {
+                            div.parentNode.insertBefore(dragging, div.nextSibling);
+                        }
+                    }
+                });
+
+                mergeFileList.appendChild(div);
+            });
+        }
+
+        function removeMergeFile(index) {
+            mergeFiles.splice(index, 1);
+            renderMergeFileList();
+
+            if (mergeFiles.length === 0) {
+                mergeBtn.disabled = true;
+            }
+        }
+
+        function updateMergeOrder() {
+            const items = mergeFileList.querySelectorAll('.file-item');
+            const newOrder = Array.from(items).map(item => item.dataset.index);
+            const originalFiles = [...mergeFiles];
+
+            mergeFiles = newOrder.map(i => originalFiles[i]);
+
+            // 发送新的顺序到服务器
+            fetch(`${API_BASE}?action=reorder`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    taskId: mergeTaskId,
+                    order: mergeFiles.map(f => f.file)
+                })
+            });
+        }
+
+        mergeClearBtn.addEventListener('click', () => {
+            resetMergeUpload();
+        });
+
+        mergeBtn.addEventListener('click', () => {
+            const options = {
+                name: document.getElementById('merge-name').value,
+                artist: document.getElementById('merge-artist').value,
+                album: document.getElementById('merge-album').value,
+                genre: document.getElementById('merge-genre').value,
+                audioBitrate: document.getElementById('merge-bitrate').value
+            };
+
+            mergeBtn.disabled = true;
+            mergeBtn.innerHTML = '<span class="loading"></span> 处理中...';
+
+            fetch(`${API_BASE}?action=merge`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    taskId: mergeTaskId,
+                    options: options
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('merge-progress').classList.add('active');
+                    checkMergeStatus();
+                } else {
+                    showAlert(data.error || '合并失败', 'danger');
+                    mergeBtn.disabled = false;
+                    mergeBtn.innerHTML = '🚀 开始合并';
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                showAlert('合并失败：' + err.message, 'danger');
+                mergeBtn.disabled = false;
+                mergeBtn.innerHTML = '🚀 开始合并';
+            });
+        });
+
+        function checkMergeStatus() {
+            if (!mergeTaskId) return;
+
+            fetch(`${API_BASE}?action=status&taskId=${mergeTaskId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    const progressBar = document.getElementById('merge-progress-bar');
+                    const progressLog = document.getElementById('merge-progress-log');
+
+                    progressBar.style.width = data.progress + '%';
+                    progressBar.textContent = data.progress + '%';
+
+                    if (data.log && data.log.length > 0) {
+                        progressLog.innerHTML = data.log.join('<br>');
+                    }
+
+                    if (data.status === 'completed') {
+                        mergeBtn.innerHTML = '✅ 合并完成';
+                        showMergeResult();
+                    } else if (data.status === 'timeout') {
+                        showAlert('处理超时，请检查文件', 'danger');
+                        mergeBtn.disabled = false;
+                        mergeBtn.innerHTML = '🚀 开始合并';
+                    } else {
+                        setTimeout(checkMergeStatus, 2000);
+                    }
+                }
+            });
+        }
+
+        function showMergeResult() {
+            fetch(`${API_BASE}?action=list_output&taskId=${mergeTaskId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.success && data.files.length > 0) {
+                    const resultArea = document.getElementById('merge-result');
+                    resultArea.innerHTML = '<div class="result-card"><h4>🎉 合并完成！</h4>';
+
+                    data.files.forEach(file => {
+                        resultArea.innerHTML += `
+                            <a href="${API_BASE}${file.downloadUrl}&taskId=${mergeTaskId}"
+                               class="download-link" download="${file.name}">
+                                📥 下载 ${file.name} (${formatFileSize(file.size)})
+                            </a>
+                        `;
+                    });
+
+                    resultArea.innerHTML += '</div>';
+                    resultArea.classList.add('active');
+                }
+            });
+        }
+
+        // ========== 分割功能 ==========
+
+        const splitUploadArea = document.getElementById('split-upload-area');
+        const splitFileInput = document.getElementById('split-file-input');
+        const splitFileInfo = document.getElementById('split-file-info');
+        const splitBtn = document.getElementById('split-btn');
+
+        splitUploadArea.addEventListener('click', () => splitFileInput.click());
+
+        splitFileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                splitFile = e.target.files[0];
+                renderSplitFileInfo();
+                splitBtn.disabled = false;
+            }
+        });
+
+        function renderSplitFileInfo() {
+            splitFileInfo.innerHTML = `
+                <div class="file-item">
+                    <span class="file-drag-handle">📄</span>
+                    <div class="file-info">
+                        <div class="file-name">${splitFile.name}</div>
+                        <div class="file-size">${formatFileSize(splitFile.size)}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        splitBtn.addEventListener('click', () => {
+            const formData = new FormData();
+            formData.append('file', splitFile);
+            formData.append('options', JSON.stringify({
+                audioFormat: document.getElementById('split-format').value,
+                audioBitrate: document.getElementById('split-bitrate').value,
+                audioChannels: document.getElementById('split-channels').value
+            }));
+
+            splitBtn.disabled = true;
+            splitBtn.innerHTML = '<span class="loading"></span> 处理中...';
+
+            fetch(`${API_BASE}?action=split`, {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    splitTaskId = data.taskId;
+                    document.getElementById('split-progress').classList.add('active');
+                    checkSplitStatus();
+                } else {
+                    showAlert(data.error || '分割失败', 'danger');
+                    splitBtn.disabled = false;
+                    splitBtn.innerHTML = '✂️ 开始分割';
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                showAlert('分割失败：' + err.message, 'danger');
+                splitBtn.disabled = false;
+                splitBtn.innerHTML = '✂️ 开始分割';
+            });
+        });
+
+        function checkSplitStatus() {
+            if (!splitTaskId) return;
+
+            fetch(`${API_BASE}?action=status&taskId=${splitTaskId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    const progressBar = document.getElementById('split-progress-bar');
+                    const progressLog = document.getElementById('split-progress-log');
+
+                    progressBar.style.width = data.progress + '%';
+                    progressBar.textContent = data.progress + '%';
+
+                    if (data.log && data.log.length > 0) {
+                        progressLog.innerHTML = data.log.join('<br>');
+                    }
+
+                    if (data.status === 'completed') {
+                        splitBtn.innerHTML = '✅ 分割完成';
+                        showSplitResult();
+                    } else if (data.status === 'timeout') {
+                        showAlert('处理超时，请检查文件', 'danger');
+                        splitBtn.disabled = false;
+                        splitBtn.innerHTML = '✂️ 开始分割';
+                    } else {
+                        setTimeout(checkSplitStatus, 2000);
+                    }
+                }
+            });
+        }
+
+        function showSplitResult() {
+            fetch(`${API_BASE}?action=list_output&taskId=${splitTaskId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.success && data.files.length > 0) {
+                    const resultArea = document.getElementById('split-result');
+                    resultArea.innerHTML = '<div class="result-card"><h4>🎉 分割完成！</h4>';
+
+                    data.files.forEach(file => {
+                        resultArea.innerHTML += `
+                            <a href="${API_BASE}?action=download&taskId=${splitTaskId}&file=${file.name}"
+                               class="download-link" download="${file.name}">
+                                📥 下载 ${file.name}
+                            </a>
+                        `;
+                    });
+
+                    resultArea.innerHTML += '</div>';
+                    resultArea.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
