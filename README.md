@@ -1,4 +1,4 @@
-# aagents-tool（原 m4b-tool）中文说明
+# aagents-tool中文说明
 
 ## 项目简介
 
