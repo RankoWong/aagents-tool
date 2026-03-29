@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioAgent Admin Dashboard</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+            --success: #10b981;
+        }
+
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Dashboard Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Filter Bar */
+        .filter-bar {
+            background: var(--surface);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        input[type="date"] {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            font-family: inherit;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: #64748b;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #64748b;
+            letter-spacing: 0.05em;
+        }
+
+        tr:hover {
+            background: #f8fafc;
+        }
+
+        .badge {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            background: #e0e7ff;
+            color: #4338ca;
+            font-family: monospace;
+        }
+
+        .refresh-status {
+            font-size: 0.8125rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ AudioAgent Admin</h1>
+            <div style="text-align: right">
+                <div class="refresh-status" id="last-update">Synced: Never</div>
+                <button class="btn btn-secondary" onclick="loadLogs()" style="margin-top: 5px;">Sync Now</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Unique Users</div>
+                <div class="stat-value" id="stat-emails">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Unique Devices</div>
+                <div class="stat-value" id="stat-macs">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Total Logins</div>
+                <div class="stat-value" id="stat-total">0</div>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div style="margin-bottom: 2rem; display: flex; gap: 10px; border-bottom: 2px solid var(--border);">
+            <button class="tab-btn active" onclick="showTab('logs')">Access Logs</button>
+            <button class="tab-btn" onclick="showTab('updates')">Software Updates</button>
+        </div>
+
+        <style>
+            .tab-btn {
+                background: none;
+                border: none;
+                padding: 12px 24px;
+                cursor: pointer;
+                font-weight: 600;
+                color: #64748b;
+                border-bottom: 2px solid transparent;
+                margin-bottom: -2px;
+            }
+
+            .tab-btn.active {
+                color: var(--primary);
+                border-bottom-color: var(--primary);
+            }
+
+            .tab-content {
+                display: none;
+            }
+
+            .tab-content.active {
+                display: block;
+            }
+        </style>
+
+        <!-- Access Logs Tab -->
+        <div id="logs-tab" class="tab-content active">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>From:</label>
+                    <input type="date" id="filter-start">
+                </div>
+                <div class="filter-group">
+                    <label>To:</label>
+                    <input type="date" id="filter-end">
+                </div>
+                <button class="btn" onclick="applyFilters()">Apply Filters</button>
+                <button class="btn btn-secondary" onclick="resetFilters()">Reset</button>
+            </div>
+
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time (Y-M-D H:M:S)</th>
+                            <th>Version</th>
+                            <th>Timezone</th>
+                            <th>Email</th>
+                            <th>IP Address</th>
+                            <th>Device MAC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="log-body">
+                        <tr>
+                            <td colspan="6" style="text-align: center; padding: 3rem;">Loading access logs...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Update Manager Tab -->
+        <div id="updates-tab" class="tab-content">
+            <div class="card" style="padding: 2rem;">
+                <h2 style="margin-top:0">🚀 Publish Update</h2>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 500px;">
+                    <div class="filter-group" style="flex-direction: column; align-items: flex-start;">
+                        <label>Target Version (e.g., 1.1.0)</label>
+                        <input type="text" id="target-version" placeholder="1.0.1"
+                            style="width: 100%; border: 1px solid var(--border); padding: 8px; border-radius: 6px;">
+                    </div>
+
+                    <div class="filter-group" style="flex-direction: column; align-items: flex-start;">
+                        <label>Update Package (.zip)</label>
+                        <input type="file" id="package-file"
+                            style="width: 100%; border: 1px solid var(--border); padding: 8px; border-radius: 6px;">
+                    </div>
+
+                    <button class="btn" onclick="uploadUpdate()" id="upload-btn">Publish Update</button>
+                </div>
+
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px solid var(--border);">
+
+                <h3>Current Live Version</h3>
+                <div id="version-info" class="badge"
+                    style="padding: 10px 20px; font-size: 1rem; background: #f1f5f9; color: var(--primary);">
+                    Checking...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allLogs = [];
+
+        function showTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(tab + '-tab').classList.add('active');
+            event.target.classList.add('active');
+            if (tab === 'updates') fetchVersion();
+        }
+
+        async function fetchVersion() {
+            const res = await fetch('update_api.php');
+            const data = await res.json();
+            document.getElementById('version-info').innerHTML = `
+                <strong>v${data.version}</strong> (Released: ${data.release_date})<br>
+                <small style="color: #64748b">${data.url || 'No package uploaded'}</small>
+            `;
+        }
+
+        async function uploadUpdate() {
+            const version = document.getElementById('target-version').value;
+            const file = document.getElementById('package-file').files[0];
+            if (!version || !file) return alert('Please provide version and file');
+
+            const btn = document.getElementById('upload-btn');
+            btn.disabled = true;
+            btn.textContent = 'Uploading...';
+
+            const formData = new FormData();
+            formData.append('version', version);
+            formData.append('package', file);
+
+            try {
+                const res = await fetch('update_api.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await res.json();
+                if (data.success) {
+                    alert('Update released successfully!');
+                    fetchVersion();
+                } else {
+                    alert('Upload failed: ' + (data.message || 'Unknown error'));
+                }
+            } catch (err) {
+                console.error('Upload error:', err);
+                alert('Upload failed: ' + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Deploy Silent Update';
+            }
+        }
+
+        async function loadLogs() {
+            try {
+                const response = await fetch('api.php');
+                allLogs = await response.json();
+                document.getElementById('last-update').textContent = `Last current sync: ${new Date().toLocaleTimeString()}`;
+                applyFilters(); // Initial render
+            } catch (err) {
+                console.error(err);
+                document.getElementById('log-body').innerHTML = '<tr><td colspan="6" style="text-align: center; color: red;">Error: Cannot connect to admin API</td></tr>';
+            }
+        }
+
+        function applyFilters() {
+            const startDate = document.getElementById('filter-start').value;
+            const endDate = document.getElementById('filter-end').value;
+
+            let filtered = allLogs;
+
+            if (startDate) {
+                filtered = filtered.filter(log => log.timestamp >= startDate + " 00:00:00");
+            }
+            if (endDate) {
+                filtered = filtered.filter(log => log.timestamp <= endDate + " 23:59:59");
+            }
+
+            renderView(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById('filter-start').value = '';
+            document.getElementById('filter-end').value = '';
+            renderView(allLogs);
+        }
+
+        function renderView(logs) {
+            const body = document.getElementById('log-body');
+
+            // Calculate Stats
+            const uniqueEmails = new Set(logs.map(l => l.email)).size;
+            const uniqueMacs = new Set(logs.map(l => l.mac)).size;
+
+            document.getElementById('stat-emails').textContent = uniqueEmails;
+            document.getElementById('stat-macs').textContent = uniqueMacs;
+            document.getElementById('stat-total').textContent = logs.length;
+
+            if (logs.length === 0) {
+                body.innerHTML = '<tr><td colspan="6" style="text-align: center; padding: 3rem; color: #64748b;">No login records found for this criteria</td></tr>';
+                return;
+            }
+
+            body.innerHTML = logs.map(log => `
+                <tr>
+                    <td style="font-size: 0.85rem; color: #64748b; font-family: monospace;">${log.timestamp}</td>
+                    <td><span class="badge" style="background:#e0f2fe; color:#0369a1;">v${log.version || '1.0.0'}</span></td>
+                    <td><span class="badge" style="background:#fef3c7; color:#92400e;">${log.timezone || 'UTC'}</span></td>
+                    <td style="font-weight: 600;">${log.email}</td>
+                    <td><span class="badge" style="background:#f1f5f9; color:#475569;">${log.ip}</span></td>
+                    <td><span class="badge">${log.mac}</span></td>
+                </tr>
+            `).join('');
+        }
+
+        // Initialize
+        loadLogs();
+        // Background sync
+        setInterval(loadLogs, 15000);
+    </script>
+</body>
+
+</html>

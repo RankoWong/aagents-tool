@@ -42,7 +42,7 @@ class AbstractCommand extends Command implements LoggerInterface
 {
     use LoggerTrait, CacheAdapterTrait;
 
-    const APP_NAME = "m4b-tool";
+    const APP_NAME = "aagents-tool";
     const EMPTY_MARKER = "Empty tag fields";
 
     const AUDIO_EXTENSION_MP3 = "mp3";
@@ -320,7 +320,7 @@ class AbstractCommand extends Command implements LoggerInterface
         $this->setName(str_replace("-command", "", $commandName));
         $this->addArgument(static::ARGUMENT_INPUT, InputArgument::REQUIRED, 'Input file or folder');
         $this->addOption(static::OPTION_LOG_FILE, null, InputOption::VALUE_OPTIONAL, "file to log all output", "");
-        $this->addOption(static::OPTION_DEBUG, null, InputOption::VALUE_NONE, "enable debug mode - sets verbosity to debug, logfile to m4b-tool.log and temporary encoded files are not deleted");
+        $this->addOption(static::OPTION_DEBUG, null, InputOption::VALUE_NONE, "enable debug mode - sets verbosity to debug, logfile to aagents-tool.log and temporary encoded files are not deleted");
         $this->addOption(static::OPTION_FORCE, "f", InputOption::VALUE_NONE, "force overwrite of existing files");
         $this->addOption(static::OPTION_TMP_DIR, null, InputOption::VALUE_OPTIONAL, "use this directory for creating temporary files");
         $this->addOption(static::OPTION_NO_CLEANUP, null, InputOption::VALUE_NONE, "do not cleanup generated metadata files (e.g. <filename>.chapters.txt)");
@@ -392,7 +392,7 @@ class AbstractCommand extends Command implements LoggerInterface
 
         if ($this->optDebug) {
             $this->output->setVerbosity(OutputInterface::VERBOSITY_DEBUG);
-            $this->optLogFile = $this->optLogFile ?? new SplFileInfo("m4b-tool.log");
+            $this->optLogFile = $this->optLogFile ?? new SplFileInfo("aagents-tool.log");
         }
 
         $this->optForce = $this->input->getOption(static::OPTION_FORCE);
@@ -464,7 +464,7 @@ class AbstractCommand extends Command implements LoggerInterface
         $detailsFile = "/etc/issue";
         $details = is_readable($detailsFile) ? trim(file_get_contents($detailsFile)) : ' - ';
         $appVersion = $this->getApplication()->getVersion() === "@package_version@" ? "development" : $this->getApplication()->getVersion();
-        $this->info(sprintf("m4b-tool %s, OS: %s (%s)", $appVersion, PHP_OS, $details));
+        $this->info(sprintf("aagents-tool %s, OS: %s (%s)", $appVersion, PHP_OS, $details));
     }
 
     protected function dumpTagAsLines(Tag $tag)

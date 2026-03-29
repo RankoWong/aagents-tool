@@ -32,7 +32,7 @@ use M4bTool\Executables\Tone;
 use Symfony\Component\Console\Application;
 
 try {
-    $application = new Application('m4b-tool', '@package_version@');
+    $application = new Application('aagents-tool', '@package_version@');
 
     $commands = [
         new Command\ChaptersCommand(),

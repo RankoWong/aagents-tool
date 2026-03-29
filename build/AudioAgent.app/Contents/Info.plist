@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleExecutable</key>
+    <string>AudioAgent</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.audioagent.webview</string>
+    <key>CFBundleName</key>
+    <string>AudioAgent</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>AudioAgent needs access to the microphone for recording audio.</string>
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>AudioAgent needs screen/audio capture permission to record system sound alongside your microphone.</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>AudioAgent needs calendar access to schedule meeting events.</string>
+    <key>CFBundleShortVersionString</key>
+    <string>2.2.0</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+</dict>
+</plist>

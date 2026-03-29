@@ -6,9 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **m4b-tool** is a PHP 8.2+ command-line tool for manipulating audiobook files. It acts as a wrapper around `ffmpeg` and `mp4v2` to merge, split, and manipulate audiobook files with chapter support. While designed for M4B files, it supports various audio formats (MP3, AAC, OGG, ALAC, FLAC).
 
+The project includes:
+- **CLI tool**: Command-line interface for audiobook manipulation
+- **Web interface**: Browser-based UI at `web/` with REST API
+- **macOS app**: Native application (AudioAgent.app) with embedded web UI
+
 ### Entry Points
 - Main executable: `bin/m4b-tool.php`
+- Shell wrapper: `m4b-tool.sh` (handles Homebrew PHP paths on macOS)
 - Phar build output: `dist/m4b-tool.phar`
+- Web interface: `web/index.html` (served via `web/api.php`)
+- macOS app: `build/AudioAgent.app` (built via `make-app.sh`)
 - PSR-4 autoloading namespace: `M4bTool\` -> `src/library/`
 
 ## Build and Development Commands
@@ -60,6 +68,62 @@ docker-compose up m4b-tool-dev
 docker run -it --rm -v "$(pwd)":/mnt sandreas/m4b-tool:latest
 ```
 
+### Web Interface Development
+
+```bash
+# Start local PHP development server
+php -S localhost:8080 -t web
+
+# Access at http://localhost:8080
+# The web interface provides a GUI for merge/split operations
+```
+
+### macOS Application Development
+
+```bash
+# Build the macOS app (requires Swift compiler)
+./make-app.sh
+
+# The app is built to: build/AudioAgent.app
+# Double-click to run, or copy to /Applications/
+```
+
+**App Architecture:**
+- **Swift + WKWebView**: Native macOS app with embedded web UI
+- **M4BToolApp.swift**: Main application code (window management, PHP server control)
+- **Embedded resources**: Web files and m4b-tool.sh bundled in app
+- **Auto-port selection**: Tries ports 8080-8084 to avoid conflicts
+- **Lifecycle management**: Automatically starts/stops PHP server with app
+
+**Development Workflow:**
+- Modify web files in `web/` → refresh app (no rebuild needed)
+- Modify Swift code → rebuild with `./make-app.sh`
+- Debug via Console.app or terminal output
+
+### Shell Wrapper (m4b-tool.sh)
+
+The `m4b-tool.sh` script provides a convenience wrapper around the main PHP executable with macOS-specific optimizations:
+
+**Key Features:**
+- **Homebrew PHP Detection**: Automatically finds and uses PHP from `/opt/homebrew/bin/php`
+- **PATH Configuration**: Sets proper PATH for Homebrew installations
+- **Project Directory Awareness**: Executes from correct directory regardless of CWD
+- **Error Handling**: Better error messages and output redirection
+
+**Usage:**
+```bash
+# Direct execution
+./m4b-tool.sh merge --output-file="output.m4b" "input/"
+
+# Or via the main PHP executable
+/opt/homebrew/bin/php bin/m4b-tool.php merge ...
+```
+
+**When to use:**
+- Use `m4b-tool.sh` for macOS development (handles Homebrew paths)
+- Use `bin/m4b-tool.php` directly when PHP is in system PATH
+- Use `dist/m4b-tool.phar` for production deployment (standalone)
+
 ## Architecture
 
 ### High-Level Structure
@@ -69,6 +133,7 @@ The codebase follows a clean architecture with Symfony Console:
 ```
 m4b-tool/
 ├── bin/m4b-tool.php           # CLI entry point
+├── m4b-tool.sh                # Shell wrapper with Homebrew PHP support
 ├── src/library/               # Main application code (PSR-4 autoload)
 │   ├── Command/               # Symfony Console commands
 │   ├── Audio/                 # Audio processing logic
@@ -80,8 +145,18 @@ m4b-tool/
 │   ├── Parser/               # File format parsers
 │   ├── Tags/                 # Tag handling utilities
 │   └── Common/               # Shared utilities
+├── web/                       # Web interface and API
+│   ├── index.html            # Single-page application UI
+│   ├── api.php               # REST API backend
+│   ├── assets/               # CSS and JavaScript
+│   ├── uploads/              # Temporary file storage
+│   ├── output/               # Processed files
+│   └── logs/                 # API and operation logs
 ├── tests/                    # PHPUnit tests
-└── tools/                    # Utility scripts
+├── tools/                    # Utility scripts
+├── make-app.sh               # macOS app build script
+├── M4BToolApp.swift          # macOS app source code
+└── build/                    # Build output (including .app bundle)
 ```
 
 ### Core Components
@@ -227,3 +302,130 @@ To add support for a new audio metadata format:
 2. Implement required interface methods (read/write cover, metadata, chapters)
 3. Register in tag format detection logic
 4. Add test cases in `tests/M4bTool/Audio/Tag/`
+
+## Web Interface and API Architecture
+
+### Overview
+
+The web interface provides a user-friendly GUI for audiobook operations through a browser-based SPA (Single Page Application). It consists of:
+
+- **Frontend**: `web/index.html` - Vue.js-inspired reactive UI with tabbed interface (Merge/Split)
+- **Backend**: `web/api.php` - REST API handling file operations and task management
+- **Assets**: `web/assets/` - CSS and JavaScript for the UI
+
+### API Endpoints
+
+The REST API in `web/api.php` provides these endpoints:
+
+**File Operations:**
+- `POST /api.php?action=upload` - Upload audio files (creates unique task ID)
+- `POST /api.php?action=upload_paths` - Native file path injection (for macOS app)
+- `GET /api.php?action=task_info` - Get task details and file list
+
+**Processing Operations:**
+- `POST /api.php?action=merge` - Start merge operation with optional metadata
+- `POST /api.php?action=split` - Start split operation by chapters
+- `GET /api.php?action=status` - Check task progress (parses log files)
+
+**Management Operations:**
+- `GET /api.php?action=download` - Download processed files
+- `GET /api.php?action=view_logs` - View operation logs
+- `POST /api.php?action=delete` - Clean up task files
+
+### Task Management System
+
+The web interface uses an asynchronous task-based processing model:
+
+1. **Upload**: Files uploaded to `web/uploads/{task_id}/` with unique task ID
+2. **Process**: Background execution via `nohup` for long-running operations
+3. **Monitor**: Progress tracked by parsing log files in `web/logs/`
+4. **Output**: Results stored in `web/output/{task_id}/`
+5. **Download**: Users download processed files, then clean up
+
+**Task Lifecycle:**
+```
+Upload → Processing (background) → Monitoring → Complete → Download → Cleanup
+```
+
+### File Storage Structure
+
+```
+web/
+├── uploads/           # Temporary upload storage (per task)
+│   └── task_{id}/    # Auto-cleanup after download
+├── output/           # Processed files (per task)
+│   └── task_{id}/
+└── logs/             # API and operation logs (daily rotation)
+    ├── api_2026-01-24.log
+    └── task_{id}.log
+```
+
+### Asynchronous Processing Pattern
+
+The API uses `nohup` for background processing:
+
+```php
+$cmd = "nohup /path/to/m4b-tool.sh merge ... > $logfile 2>&1 &";
+exec($cmd);
+```
+
+**Progress Tracking:**
+- Log files parsed for progress indicators (% complete)
+- Status endpoint returns current state (processing/complete/error)
+- Frontend polls status endpoint periodically
+
+### macOS App Integration
+
+The native macOS app (`M4BToolApp.swift`) integrates with the web interface through:
+
+1. **File Picker Injection**: Native macOS file picker passes selected paths to web UI via `upload_paths` endpoint
+2. **Embedded Server**: PHP server runs within app process on dynamic port (8080-8084)
+3. **Download Management**: Processed files automatically saved to ~/Downloads
+4. **WebView Communication**: JavaScript bridge for native file operations
+
+**Key Swift Components:**
+- `WKWebView` - Embeds web interface in native window
+- `Process` - Manages PHP server lifecycle
+- `NSUserInterfaceItemIdentification` - Window state persistence
+- Port detection logic - Finds available port on startup
+
+### Development Workflow for Web Interface
+
+**Local Development:**
+```bash
+# Start PHP server
+php -S localhost:8080 -t web
+
+# Access at http://localhost:8080
+# Upload files, process, download results
+```
+
+**Debugging:**
+- API logs: `tail -f web/logs/api_*.log`
+- Task logs: `tail -f web/logs/task_*.log`
+- Browser DevTools for frontend debugging
+
+**Modifying UI:**
+1. Edit `web/index.html` for structure
+2. Edit `web/assets/css/style.css` for styling
+3. Edit `web/assets/js/app.js` for behavior
+4. Refresh browser to see changes
+
+**Modifying API:**
+1. Edit `web/api.php`
+2. Restart PHP server (Ctrl+C, then `php -S localhost:8080 -t web`)
+3. Test with cURL or frontend
+
+### Security Considerations
+
+**Web Interface:**
+- File uploads restricted to audio formats (mp3, m4a, m4b, etc.)
+- Output filenames sanitized to prevent path traversal
+- Task IDs randomized (uniqid) to prevent enumeration
+- CORS enabled for local development
+
+**macOS App:**
+- `NSAppTransportSecurity` configured in Info.plist for local networking
+- Local server only (no external exposure)
+- File paths validated before processing
+- No privileged operations (user-space only)

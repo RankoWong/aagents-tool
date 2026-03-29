@@ -17,3 +17,7 @@ src/library/M4bTool/Command/Plugins/
 fummel.php
 m4b-tool_debug.log
 nbproject/private/
+web/logs/*.log
+web/output/task_*
+web/uploads/task_*
+web/admin/access_logs.json

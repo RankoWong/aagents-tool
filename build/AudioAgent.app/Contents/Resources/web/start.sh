@@ -3,7 +3,7 @@
 
 PHP="$(command -v php)"
 if [ -z "$PHP" ]; then
-  PHP="/opt/homebrew/bin/php"
+  PHP="/opt/homebrew/Cellar/php@8.2/8.2.30/bin/php"
 fi
 WEB_DIR="$(cd "$(dirname "$0")" && pwd)"
 PORT=8080

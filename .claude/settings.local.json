@@ -11,7 +11,30 @@
       "Bash(curl:*)",
       "Bash(cat:*)",
       "Bash(xargs kill:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git tag:*)",
+      "Bash(kill:*)",
+      "Bash(lsof:*)",
+      "Bash(docker-compose:*)",
+      "Bash(./make-app.sh:*)",
+      "Bash(open:*)",
+      "Bash(killall:*)",
+      "Bash(bash -c '\nSCRIPT_PATH=\"\"$\\(cd \"\"$\\(dirname \"\"M4B Tool\"\"\\)\"\" && pwd\\)\"\"\nAPP_PATH=\"\"$\\(dirname \"\"$SCRIPT_PATH\"\"\\)\"\"\nRESOURCES=\"\"$APP_PATH/../Resources\"\"\nWEB_DIR=\"\"$RESOURCES/web\"\"\necho \"\"SCRIPT_PATH: $SCRIPT_PATH\"\"\necho \"\"APP_PATH: $APP_PATH\"\"\necho \"\"RESOURCES: $RESOURCES\"\"\necho \"\"WEB_DIR: $WEB_DIR\"\"\necho \"\"WEB_DIR exists: $\\(test -d \"\"$WEB_DIR\"\" && echo YES || echo NO\\)\"\"\nls -la \"\"$WEB_DIR\"\" 2>&1 | head -10\n')",
+      "Bash(log show:*)",
+      "Bash(\"./build/M4B Tool.app/Contents/MacOS/M4B Tool\")",
+      "Bash(/tmp/test-app.sh:*)",
+      "Bash(/tmp/run-app-test.sh:*)",
+      "Bash(/tmp/run-app-with-log.sh:*)",
+      "Bash(plutil:*)",
+      "Bash(ls:*)",
+      "Bash(pkill:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(./build/AudioAgent.app/Contents/MacOS/AudioAgent:*)",
+      "Bash(echo:*)",
+      "Bash(ffprobe:*)",
+      "Bash(/opt/homebrew/bin/ffprobe:*)",
+      "Bash(tail:*)"
     ]
   }
 }

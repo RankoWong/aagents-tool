@@ -1,0 +1,11 @@
+{
+    "whisper": {
+        "name": "ggml-base.bin",
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin",
+        "description": "Standard Whisper model for balanced speed and accuracy."
+    },
+    "ollama": {
+        "model": "qwen2.5:7b",
+        "description": "Recommended LLM for detailed meeting summarization."
+    }
+}

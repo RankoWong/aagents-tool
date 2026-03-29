@@ -732,7 +732,7 @@ class MergeCommand extends AbstractConversionCommand
             $dir = static::normalizeDirectory($this->optTmpDir);
         } else {
             $basename = $outputFile->getBasename("." . $outputFile->getExtension());
-            $basename = $basename === "" ? "m4b-tool" : $basename;
+            $basename = $basename === "" ? "aagents-tool" : $basename;
 
             $dir = $outputFile->getPath() ? $outputFile->getPath() . DIRECTORY_SEPARATOR : "";
             $dir .= $basename . "-tmpfiles" . DIRECTORY_SEPARATOR;
